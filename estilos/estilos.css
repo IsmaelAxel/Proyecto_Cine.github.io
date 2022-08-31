@@ -18,8 +18,45 @@ h1{
     text-align: center;
     font-family: 'Anton', sans-serif;
 }
+.imagencentrada{
+    text-align: center;
+    padding: 1%; 
+}
+.imagen_linea{
+text-align: center;
+border-color: red;
+border-style: solid;
+padding: 1%;
+margin: 5%;
 
-
+}
+.margenes{
+    margin-right: 60px;
+    
+}
+.imagen_bloque{
+    text-align: center;
+    }
+.margenes_bloque{
+    margin-right: 75px;
+}
+.imagen_collage{
+    
+    border-style: solid;
+    border-color: blueviolet;
+    padding: 1%;
+    
+}
+.collage{
+    margin-right: 30px;
+    
+    margin-bottom: 15px;
+}
+.enbloque_doble{
+    
+    margin-left: 100px;
+    
+}
 /* dejo los links de las fuentes para que los usen donde quieran 
 font-family: 'Anton', sans-serif;
 font-family: 'Kanit', sans-serif;
