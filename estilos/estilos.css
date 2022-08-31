@@ -1,6 +1,8 @@
 *{
   margin: 0%auto;
   padding: 0%;
+  background-color: black;
+  color: white;
 }
 
 h1{
@@ -8,3 +10,18 @@ h1{
     width: 100%;
     background-size: cover;
 }
+.iconosfooter{
+    width: 10%;
+    padding: 1%;
+}
+nav{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* dejo los links de las fuentes para que los usen donde quieran 
+font-family: 'Anton', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Merriweather', serif;
+*/
