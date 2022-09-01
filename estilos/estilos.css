@@ -67,6 +67,7 @@ font-family: 'Merriweather', serif;
 /* ACA EMPIEZA CATALOGO */
 
 .div_catalogo{
+    position: relative;
     overflow-x: scroll;
     padding: 2% 2%;
     margin: 0% 0%;
