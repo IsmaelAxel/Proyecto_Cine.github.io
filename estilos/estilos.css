@@ -4,58 +4,58 @@
   background-color: black;
   color: white;
 }
+hr{
+    
+    border-top-color: blueviolet;
+    border-bottom: 0ch;
+    border-width: 1ch;
+    padding: 0%;
+    border-right-width: 0ch;
+    border-left-width: 0ch;
+}
+    
 
 h1{
     text-align: center;
     width: 100%;
     background-size: cover;
 }
-.iconosfooter{
-    width: 10%;
-    padding: 1%;
+a{
+    margin-left: 2%;
+    
 }
 .encabezado{
-    text-align: center;
+    
+    text-align: left;
     font-family: 'Anton', sans-serif;
-}
+    }
+    .separacion{
+        
+        margin: 1%;
+    }
 .imagencentrada{
     text-align: center;
-    padding: 1%; 
+    padding: 1%;
+    }
+.primer_imagen{
+    border-radius: 2%;
+    border-style: solid;
+    border-color: blueviolet;
+
 }
 .imagen_linea{
+position: relative;
 text-align: center;
-border-color: red;
+border-color: blueviolet;
 border-style: solid;
 padding: 1%;
-margin: 5%;
+margin: 0% 16% 0%;
+border-radius: 5%;
+background-color: blueviolet;
 
 }
 .margenes{
-    margin-right: 60px;
-    
-}
-.imagen_bloque{
-    text-align: center;
-    }
-.margenes_bloque{
-    margin-right: 75px;
-}
-.imagen_collage{
-    
-    border-style: solid;
-    border-color: blueviolet;
-    padding: 1%;
-    
-}
-.collage{
-    margin-right: 30px;
-    
-    margin-bottom: 15px;
-}
-.enbloque_doble{
-    
-    margin-left: 100px;
-    
+    margin-right:  0px 30px  0px;
 }
 /* dejo los links de las fuentes para que los usen donde quieran 
 font-family: 'Anton', sans-serif;
