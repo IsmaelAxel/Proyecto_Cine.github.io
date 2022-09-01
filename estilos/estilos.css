@@ -38,8 +38,8 @@ a{
     padding: 1%;
     }
 .primer_imagen{
-    border-radius: 2%;
-    border-style: solid;
+    
+    
     border-color: blueviolet;
 
 }
@@ -48,14 +48,15 @@ position: relative;
 text-align: center;
 border-color: blueviolet;
 border-style: solid;
-padding: 1%;
-margin: 0% 16% 0%;
-border-radius: 5%;
+border-radius: 2%;
+margin: 0% 17%;
+padding: 0%;
 background-color: blueviolet;
 
 }
 .margenes{
-    margin-right:  0px 30px  0px;
+    margin: 0px 1px;
+    padding: 0%;
 }
 /* dejo los links de las fuentes para que los usen donde quieran 
 font-family: 'Anton', sans-serif;
