@@ -69,18 +69,18 @@ font-family: 'Merriweather', serif;
 .div_catalogo{
     position: relative;
     overflow-x: scroll;
-    padding: 2% 2%;
+    padding: 0%;
     margin: 0% 0%;
-    width: 1820px ;
-    height: 500px;
+    width: 100% ;
+    height: 100%;
     display: flex;
     
 }
 
 .imagen_catalogo{
-    padding: 2% 2% 2%;
-    width: 400px;
-    height: 400px;
+    padding: 0% 2% 0%;
+    width: 15%;
+    height: 100%;
     margin: 0% 0% 0%; 
      
 }
@@ -94,12 +94,14 @@ font-family: 'Merriweather', serif;
     border-left-width: 0ch;
 }
 .letra_catalogo{
+    position: relative;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     font-size: 100px;
     text-align: center;
 }
 .ultimo_div_catalogo{
+    position: relative;
     width: 1820px ;
     height: 500px;
     text-align: center;
@@ -123,6 +125,12 @@ font-family: 'Merriweather', serif;
     text-align: center;
 }
 
+.encabezado_fijo{
+    position: fixed;
+    width: 100%;
+    height: 18%;
+  z-index: 1;
+}
 /*
 aca termina el catalogo
 */
