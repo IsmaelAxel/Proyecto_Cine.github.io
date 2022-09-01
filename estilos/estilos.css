@@ -63,3 +63,65 @@ font-family: 'Anton', sans-serif;
 font-family: 'Kanit', sans-serif;
 font-family: 'Merriweather', serif;
 */
+
+/* ACA EMPIEZA CATALOGO */
+
+.div_catalogo{
+    overflow-x: scroll;
+    padding: 2% 2%;
+    margin: 0% 0%;
+    width: 1820px ;
+    height: 500px;
+    display: flex;
+    
+}
+
+.imagen_catalogo{
+    padding: 2% 2% 2%;
+    width: 400px;
+    height: 400px;
+    margin: 0% 0% 0%; 
+     
+}
+
+.linea_color{
+    border-top-color: rgb(170, 0, 248);
+    border-bottom-color: rgb(251, 255, 0);
+    border-style: double;
+    padding: 0%;
+    border-right-width: 0ch;
+    border-left-width: 0ch;
+}
+.letra_catalogo{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+}
+.ultimo_div_catalogo{
+    width: 1820px ;
+    height: 500px;
+    text-align: center;
+}
+.boton_enviar{
+    border: 3px solid chartreuse ;
+    background-color: purple;
+    width: 100px;
+    
+}
+.textarea{
+    border: 5px solid rgb(255, 251, 2);
+    background-color: rgba(1, 6, 77, 0.301);
+    width: 1820px;
+    font-size: xx-large;
+}
+.parrafo_recomendacion{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*
+aca termina el catalogo
+*/
