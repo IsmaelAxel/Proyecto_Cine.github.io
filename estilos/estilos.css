@@ -3,6 +3,8 @@
 }
 body {
     font-family: 'Limelight', cursive;
+    background: #141313;
+    
 }
 
 h2 {
@@ -10,9 +12,17 @@ h2 {
     text-align: center;
     padding: 20px 0;
     font-size: 40px;
+    color: rgb(255, 255, 255);
 
 }
+
+footer{
+    background: #353738;
+}
 /*Aca va todo el estilo en general de la pagina, sin clases*/
+
+
+
 
 /*Aca termina toda la estructura de la pagina, empiezan las clases*/
 
@@ -32,10 +42,11 @@ h2 {
 }
 
 .linea{
-    background: #2c2f33;
-    height: 5px;
+    background: #bb0d0d;
+    height: 3px;
     width: 100%;
     display: block;
+    
 
 }
 
@@ -113,6 +124,7 @@ h2 {
     border-radius: 50%;
 }
 
+
 .next{
     display: block;
     background: #851919;
@@ -124,6 +136,19 @@ h2 {
     text-align:center;
 
 }
+
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .close{
+      top:20px;
+      right: 20px;  
+    }
+}
+    
+
 
 
 
