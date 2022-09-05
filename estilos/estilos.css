@@ -1,5 +1,7 @@
 *{
-    margin: 0%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
 body {
     font-family: 'Limelight', cursive;
@@ -9,7 +11,7 @@ body {
 
 h2 {
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     font-size: 40px;
     color: rgb(255, 255, 255);
@@ -29,7 +31,7 @@ footer{
 }
 
 footer.titulo-seccion{
-   color: blanchedalmond; 
+   color: #fff; 
 }
 .copy{
     color: rgb(250, 248, 248);
@@ -42,16 +44,17 @@ footer.titulo-seccion{
 .redes-sociales{
     display: flex;
     justify-content: center;
-    color:#fff
+    color:#fff;
+    
 }
 
 .redes-sociales i{
-    font-size: 40px;
+    font-size: 25px;
     padding: 0 15px 0 15px ;
-    color: aliceblue;
+    color: #fff;
+    width: 60px;
    
-    
-}
+    }
 /*Aca va todo el estilo en general de la pagina, sin clases*/
 
 
@@ -64,15 +67,80 @@ footer.titulo-seccion{
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
+.clasicc{
+    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    gap: .8em;
+    grid-template-areas: 
+    "img5 img5 img1 img2"
+    "img3 img4 img6 img7";
+}
+.clasico{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    overflow: hidden;
+}
+
+.clasicc_picture--g5{
+    grid-area: img5;
+}
+.clasicc_picture--g5{
+    grid-area: img5;
+}
+.clasicc_picture--g1{
+    grid-area: img1;
+}
+.clasicc_picture--g2{
+    grid-area: img2;
+}
+.clasicc_picture--g3{
+    grid-area: img3;
+}
+.clasicc_picture--g4{
+    grid-area: img4;
+}
+.clasicc_picture--g6{
+    grid-area: img6;
+}
+.clasicc_picture--g7{
+    grid-area: img7;
+}
+.clasicc_picture{
+    position: relative;
+    overflow: hidden;
+}
+.clasicc_picture{
+    
+    transition: width 2s, height 2s, transform 2s;
+
+}
+.clasicc_picture:hover{
+    transform: scale(1.1,1.1);
+    
+}
+@media screen and (max-width:600px){
+    
+    .clasicc{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img5 img5"
+        "img1 img2"
+        "img3 img4"
+        "img6 img7";
+    }
+}
 
 /*Termina la zona de Ismael */
 
 /*Zona de Eze */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
-}
+
 
 .linea{
     background: #bb0d0d;
@@ -179,6 +247,7 @@ footer.titulo-seccion{
       top:20px;
       right: 20px;  
     }
+    
 }
     
 
