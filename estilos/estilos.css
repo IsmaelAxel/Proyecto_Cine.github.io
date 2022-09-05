@@ -1,6 +1,17 @@
 *{
     margin: 0%;
 }
+body {
+    font-family: 'Limelight', cursive;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+
+}
 /*Aca va todo el estilo en general de la pagina, sin clases*/
 
 /*Aca termina toda la estructura de la pagina, empiezan las clases*/
@@ -14,5 +25,106 @@
 /*Termina la zona de Ismael */
 
 /*Zona de Eze */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.linea{
+    background: #2c2f33;
+    height: 5px;
+    width: 100%;
+    display: block;
+
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5); 
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+}
+
+.galeria a:hover img{
+    filter:blur(2px);
+    transform: rotate(10deg) scale(1.3);
+
+
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+
+}
+
+.light-box img{
+    width: 75vw;
+    max-height: 100vh;
+}
+
+.light-box:target{
+    transform: scale(0.7);
+    
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #851919;
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next{
+    display: block;
+    background: #851919;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align:center;
+
+}
+
+
 
 /*Termina la zona de eze */
