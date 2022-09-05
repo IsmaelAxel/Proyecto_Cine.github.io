@@ -16,8 +16,41 @@ h2 {
 
 }
 
+h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
 footer{
-    background: #353738;
+    background:#292929
+}
+
+footer.titulo-seccion{
+   color: blanchedalmond; 
+}
+.copy{
+    color: rgb(250, 248, 248);
+    text-align: center;
+    font-size: 13px;
+
+
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    color:#fff
+}
+
+.redes-sociales i{
+    font-size: 40px;
+    padding: 0 15px 0 15px ;
+    color: aliceblue;
+   
+    
 }
 /*Aca va todo el estilo en general de la pagina, sin clases*/
 
