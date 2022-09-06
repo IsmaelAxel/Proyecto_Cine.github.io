@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0
 }
+
 body {
     font-family: 'Limelight', cursive;
     background: #141313;
@@ -37,8 +38,6 @@ footer.titulo-seccion{
     color: rgb(250, 248, 248);
     text-align: center;
     font-size: 13px;
-
-
 }
 
 .redes-sociales{
