@@ -129,6 +129,56 @@ footer.titulo-seccion{
 
 /*Zona de nico*/
 
+.contenedor_flex{
+    background-image: linear-gradient(#292929, black,black,black, #292929);
+    display:flex;
+    overflow-x: auto;
+    padding: 3em 2em 3em ;
+    gap: 4em;
+    align-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #23272a; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 1, 1); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255); 
+  }
+
+.contenedor_flex > div{
+    width: 100%;
+    height: 100%;
+}
+
+.caja{
+width: 200px;
+height: 300px;
+animation-name: lineacoloreada;
+border: 3px double rgb(175, 23, 23);
+object-fit: cover;
+}
+
+.caja:hover{
+    transform: scale(1.3);
+    transition: width 2s, height 2s, transform 3s;
+animation-name: lineacolor;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+@keyframes lineacolor {
+    0% { border: 3px double rgb(238, 255, 0)}
+    25% { border: 3px double rgb(0, 255, 0)}
+    50% { border: 3px double rgb(4, 255, 255)}
+    75% { border: 3px double rgb(132, 0, 255)}
+    100% { border: 3px double rgb(255, 117, 3)}
+}
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
