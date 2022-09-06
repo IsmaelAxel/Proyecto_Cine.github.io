@@ -7,7 +7,7 @@
 }
 header{
     max-width: 100%;
-    width: 1700px;
+    width: 1800px;
     height: 90px;
     margin: 0;
     padding: 0; 
@@ -80,6 +80,7 @@ h2 {
     padding: 20px 0;
     font-size: 40px;
     color: rgb(255, 255, 255);
+    margin: .2em;
 
 }
 
@@ -89,10 +90,11 @@ h3 {
     padding: 10px 0;
     font-size: 30px;
     color: rgb(255, 255, 255);
+    margin: .2em;
 }
 
 footer{
-    background:#292929
+    background:#292929;
 }
 
 footer.titulo-seccion{
