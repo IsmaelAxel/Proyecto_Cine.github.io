@@ -47,7 +47,7 @@ nav ul li a:hover{
 
 /* Media Query */
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:800px){
     header{
         
         width:100%;
@@ -133,8 +133,8 @@ footer.titulo-seccion{
     background-image: linear-gradient(#292929, black,black,black, #292929);
     display:flex;
     overflow-x: auto;
-    padding: 3em 2em 3em ;
-    gap: 4em;
+    padding: 5em 3em 4em ;
+    gap: 2em;
     align-content: center;
 }
 
@@ -157,10 +157,10 @@ footer.titulo-seccion{
 }
 
 .caja{
-width: 200px;
-height: 300px;
+width: 300px;
+height: 400px;
 animation-name: lineacoloreada;
-border: 3px double rgb(175, 23, 23);
+border: 5px double rgb(175, 23, 23);
 object-fit: cover;
 }
 
@@ -173,12 +173,19 @@ animation-iteration-count: infinite;
 }
 
 @keyframes lineacolor {
-    0% { border: 3px double rgb(238, 255, 0)}
-    25% { border: 3px double rgb(0, 255, 0)}
-    50% { border: 3px double rgb(4, 255, 255)}
-    75% { border: 3px double rgb(132, 0, 255)}
-    100% { border: 3px double rgb(255, 117, 3)}
+    0% { border: 5px double rgb(238, 255, 0)}
+    25% { border: 5px double rgb(0, 255, 0)}
+    50% { border: 5px double rgb(4, 255, 255)}
+    75% { border: 5px double rgb(132, 0, 255)}
+    100% { border: 5px double rgb(255, 117, 3)}
 }
+
+@media screen and (max-width: 650px){
+    .contenedor_flex{
+        gap: 5em;
+    }
+}
+
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
