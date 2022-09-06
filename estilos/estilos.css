@@ -1,19 +1,20 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 header{
-    max-width: 95%;
+    max-width: 100%;
     width: 1700px;
     height: 90px;
-    margin: 0 auto; 
+    margin: 0;
+    padding: 0; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#292929;
-    padding: 0;
-    
+    background:#292929
 }
 
 .logo{
@@ -46,7 +47,7 @@ nav ul li a:hover{
 
 /* Media Query */
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:650px){
     header{
         
         width:100%;
