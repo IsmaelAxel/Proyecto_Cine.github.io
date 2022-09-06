@@ -27,6 +27,11 @@ header{
     color: rgb(255, 255, 255);
 }
 
+.atras{
+    padding: 0%;
+    margin: 20px;
+   }
+
 /*Nav*/
 nav ul{
     width: 350px;
@@ -205,6 +210,27 @@ footer.titulo-seccion{
 /*Termina la zona de Ismael */
 
 /*Zona de Eze */
+
+.sinopsis{
+    font-family: Vollkorn ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: justify;
+    margin: 30px;
+    padding: 30px;
+}
+
+.youtube{
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center
+    
+}
+
 
 
 .linea{
