@@ -259,7 +259,17 @@ animation-iteration-count: infinite;
         gap: 5em;
     }
 }
+/*AYUDAAAAAAAA*/
+.grid_contenedor_estrenos{
+display: grid;
+grid: 2fr, 2fr;
 
+}
+
+.grid_contenedor_estrenos > div{
+text-align: center;
+padding: 2em;
+}
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
