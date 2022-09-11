@@ -260,7 +260,7 @@ animation-iteration-count: infinite;
     }
 }
 /*AYUDAAAAAAAA*/
-.grid_contenedor_estrenos{
+/*.grid_contenedor_estrenos{
 display: grid;
 grid: 2fr, 2fr;
 
@@ -269,7 +269,7 @@ grid: 2fr, 2fr;
 .grid_contenedor_estrenos > div{
 text-align: center;
 padding: 2em;
-}
+}¨*/
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
@@ -331,6 +331,60 @@ padding: 2em;
     transform: scale(1.1,1.1);
     
 }
+.recomendados h3{
+    font-family: 'Limelight', cursive;
+    color: #851919;
+}
+.recomendados{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px;
+    gap: .8em;
+    grid-template-areas: 
+    "sinopsis sinopsis sinopsis foto"
+    "sinopsis sinopsis  sinopsis foto"
+    "video video video foto"
+    "video video video info";
+}
+.informacion{
+    position: relative;
+    overflow: hidden;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+.video--4{
+    grid-area: video;
+}
+.info--3{
+    grid-area: info;
+}
+.sinopsis--1{
+    grid-area: sinopsis;
+}
+.foto--2{
+    grid-area: foto;
+}
+.recomendados iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
 @media screen and (max-width:600px){
     
     .clasicc{
@@ -341,6 +395,21 @@ padding: 2em;
         "img3 img4"
         "img6 img7";
     }
+    .recomendados{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "foto foto"
+        "foto foto"
+        "foto foto"
+        "info info"
+        "sinopsis sinopsis"
+        "sinopsis sinopsis"
+        "sinopsis sinopsis"
+        "video video"
+        "video video"
+        "video video";
+    }
+   
 }
 
 /*Termina la zona de Ismael */
