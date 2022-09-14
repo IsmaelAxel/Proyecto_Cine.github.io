@@ -7,7 +7,6 @@
 }
 header{
     max-width: 100%;
-    width: 1800px;
     height: auto;
     position: relative;
     margin: 0;
@@ -89,12 +88,12 @@ nav ul{
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 nav ul li a{
     font-size: 16px;
     color: crimson;
+    padding: 0.2rem;
 }
 
 nav ul li a:hover{
