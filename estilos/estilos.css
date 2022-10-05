@@ -263,6 +263,10 @@ animation-iteration-count: infinite;
     text-align: center;
 }
 
+.trailer_estrenos:hover{
+    border: 3px solid green;
+}
+
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
