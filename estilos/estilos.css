@@ -24,14 +24,16 @@ video{
 
 .absolute{
     width: 100%;
-    height: 100%;
+    height: 100px;
     top: 0;
     right: 0;
     position: absolute;
     text-align: center;
     display: flex;
     justify-content: center; 
-    align-items: center;   
+    align-items: center;
+    object-fit: cover;   
+   
 }
 
 .overlay{
@@ -39,6 +41,7 @@ video{
     height: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.3);
+   
 }
 
 h1{
@@ -437,7 +440,7 @@ animation-iteration-count: infinite;
 
 .linea{
     background: #bb0d0d;
-    height: 3px;
+    height: 1px;
     width: 100%;
     display: block;
     
@@ -467,20 +470,17 @@ animation-iteration-count: infinite;
     height: 300px;
     object-fit: cover;
     transition: transform 0.5s;
-
 }
 
 .galeria a:hover img{
-    filter:blur(2px);
+    filter:blur(1.5px);
     transform: rotate(2deg) scale(1);
-
-
 }
 
 .light-box{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10;
     background: rgba(0, 0, 0, .5);
     transition: transform .3s ease-in-out;
     width: 100%;
