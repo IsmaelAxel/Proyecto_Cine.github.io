@@ -406,8 +406,8 @@ animation-iteration-count: infinite;
     border-radius: 10px;
     background-color: #851919;
     color: #fff;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-bottom: 50px;
     padding: .5em;
     display: grid;
@@ -417,14 +417,15 @@ animation-iteration-count: infinite;
     grid-template-areas:
     "texto texto foto"
     "texto texto foto"
-    "texto texto foto";
+    "texto texto foto"
+    ;
 }
 .bioIzq{
     border-radius: 10px;
     background-color: #851919;
     color: #fff;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-bottom: 50px;
     padding: .5em;
     display: grid;
@@ -438,6 +439,7 @@ animation-iteration-count: infinite;
 }
 .texto--1{
     grid-area: texto;
+    overflow: hidden;
 }
 .foto--2{
     grid-area: foto;
@@ -451,6 +453,7 @@ animation-iteration-count: infinite;
 .bioCentrada{
     text-align: center;
     text-decoration: underline;
+    
 }
 
 .bioA{
@@ -466,7 +469,7 @@ animation-iteration-count: infinite;
 /*Termina la zona de nosotros*/
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     
     .clasicc{
         grid-template-columns: 1fr 1fr;
@@ -492,6 +495,33 @@ animation-iteration-count: infinite;
         "video video"
         "video video"
         "video video";
+    }
+    .Nosotros{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas: 
+        "foto foto foto" 
+        "foto foto foto"
+        "foto foto foto"
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto"
+        ;
+    }
+    .bioIzq{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas: 
+        "foto foto foto" 
+        "foto foto foto"
+        "foto foto foto"
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto"
+        "texto texto texto" ;
     }
    
 }
