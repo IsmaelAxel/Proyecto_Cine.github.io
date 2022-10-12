@@ -395,6 +395,75 @@ animation-iteration-count: infinite;
     border-radius: 10px;
     overflow: hidden;
 }
+/*Zona de Nosotros*/
+.NosotrosCentrado{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #851919;
+}
+.Nosotros{
+    border-radius: 10px;
+    background-color: #851919;
+    color: #fff;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+    grid-template-areas:
+    "texto texto foto"
+    "texto texto foto"
+    "texto texto foto";
+}
+.bioIzq{
+    border-radius: 10px;
+    background-color: #851919;
+    color: #fff;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+    grid-template-areas:
+    "foto texto texto"
+    "foto texto texto"
+    "foto texto texto";
+}
+.texto--1{
+    grid-area: texto;
+}
+.foto--2{
+    grid-area: foto;
+}
+.imgNosotros{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bioCentrada{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.bioA{
+    color: #141313;
+}
+.bioA:hover{
+    color: #fff;
+}
+
+
+
+
+/*Termina la zona de nosotros*/
 
 
 @media screen and (max-width:600px){
