@@ -437,16 +437,22 @@ animation-iteration-count: infinite;
     "foto texto texto"
     "foto texto texto";
 }
+.biografia{
+    position: relative;
+    overflow: hidden;
+}
 .texto--1{
     grid-area: texto;
     overflow: hidden;
 }
 .foto--2{
     grid-area: foto;
+    overflow: hidden;
 }
 .imgNosotros{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
 }
