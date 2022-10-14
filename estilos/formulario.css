@@ -17,6 +17,14 @@ header{
     justify-content: space-between;
     background:#292929
 }
+.linea{
+    background: #bb0d0d;
+    height: 1px;
+    width: 100%;
+    display: block;
+
+
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
