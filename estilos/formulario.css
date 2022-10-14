@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#292929
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #141313;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin: .2em;
+	font-family: 'Limelight', cursive;
+}
+
+h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: .2em;
+	font-family: 'Limelight', cursive;
+}
+
+.logo{
+	font-family: Teko;
+	font-size: 60px; 
+	color: crimson;
+	height: 100%;
+	top: 0;
+	right: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+ 
+ }
+ 
+ .logo:hover{
+	 color: rgb(255, 255, 255);
+ }
+ /*Nav*/
+nav ul{
+    width: 350px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+	font-family: 'Limelight', cursive;
+}
+
+nav ul li a{
+    font-size: 16px;
+    color: crimson;
+    padding: 0.2rem;
+}
+
+nav ul li a:hover{
+    color: rgb(253, 252, 253);
+}
+
+ 
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+	color:rgb(182, 49, 49);
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid rgb(182, 49, 49);
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+	color: #fff;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background:rgb(182, 49, 49);
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+	
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+	
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: rgb(182, 45, 45);
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.5);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #ffffff;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+/*EMPIEZA FOOTER */
+
+footer{
+	background:#292929;
+}
+
+footer.titulo-seccion{
+   color: #fff; 
+}
+.copy{
+    color: rgb(247, 236, 236);
+    text-align: center;
+    font-size: 13px;
+
+
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    
+}
+
+.redes-sociales i{
+    font-size: 25px;
+    padding: 0 15px 0 15px ;
+    color: #fff;
+    width: 60px;
+   
+    }
