@@ -14,7 +14,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#292929
+    background-image: linear-gradient(#292929,black,black, #851919,black, black,#292929);
+    /* background-image: linear-gradient(#851919,black,black,black, black,#292929); */
+    
 }
 
 video{
@@ -207,7 +209,7 @@ footer.titulo-seccion{
 /*Zona de nico*/
 
 .contenedor_flex{
-    background-image: linear-gradient(#292929, black,black,black, #292929);
+    /* background-image: linear-gradient(#292929,black, black,black,black,black, #292929); */
     display:flex;
     overflow-x: auto;
     padding: 5em 3em 4em ;
@@ -277,6 +279,50 @@ animation-iteration-count: infinite;
 .arregloImagen{
     
   /* aca va como arreglar la imagen que no arregle */
+}
+
+.fuenteBusqueda{
+    color: #fff;
+    font-family: 'Segoe UI';
+    
+    
+}
+
+input{
+    text-align: center;
+    border-radius: 50px;
+    background-color: black;
+    border: 2px solid #292929;
+    width: 50%;
+    transition: width 3s ease-in;
+}
+
+input:focus{
+    border: 3px solid #851919;
+    outline-style: none;
+    color: #851919;
+    width: 80%;
+}
+
+.fondoFooter{
+    background-image: linear-gradient(#292929,black, black,black,black,black, #851919);
+}
+
+.fondoMain{
+    /* background-image: linear-gradient(black,#292929,#292929,black,#851919, #851919,black, black,#292929,black); */
+    background-image:radial-gradient(#292929,black,#851919,black,#292929);
+    
+}
+
+.fondoSeccion{
+    background-image: linear-gradient(#292929,black, black,black,black,black, #851919,black);
+}
+.fuenteNavegador a{
+    font-size: xx-large;
+}
+
+.arregloPosicion{
+    margin: 0px 20rem 0px 0px;
 }
 
 /*Termina la zona de nico */
@@ -601,7 +647,7 @@ animation-iteration-count: infinite;
 /*Zona de Eze */
 
 .sinopsis{
-    font-family: Vollkorn ;
+    font-family: 'Vollkorn' ;
     color: #fff;
     font-size: 18px;
     font-weight: lighter;

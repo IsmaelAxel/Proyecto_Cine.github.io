@@ -11,7 +11,7 @@ let pelis = (_data) =>{
     let html = '';
     _data.forEach(m => {
         html += `<div>
-        <div class="tarjeta">
+        <div class="tarjeta fondoFooter">
         <img src= "${m.Poster}" alt="${m.Title}">
         <div class= "cuerpo">
         <h4>${m.Title}</h4>

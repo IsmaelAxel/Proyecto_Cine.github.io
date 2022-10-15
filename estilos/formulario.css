@@ -7,7 +7,7 @@
 }
 
 header{
-    max-width: 100%;
+    /* max-width: 100%;
     height: auto;
     position: relative;
     margin: 0;
@@ -15,7 +15,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#292929
+    background:#292929 */
+	max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(#292929,black,black, #851919,black, black,#292929);
+    /* background-image: linear-gradient(#851919,black,black,black, black,#292929); */
 }
 .linea{
     background: #bb0d0d;
@@ -281,3 +291,23 @@ footer.titulo-seccion{
     width: 60px;
    
     }
+
+/* 
+
+agregado de estilos
+
+*/
+
+.fondoFooter{
+    background-image: linear-gradient(#292929,black, black,black,black,black, #851919);
+}
+
+.fondoMain{
+    /* background-image: linear-gradient(black,#292929,#292929,black,#851919, #851919,black, black,#292929,black); */
+    background-image:radial-gradient(#292929,black,#851919,black,#292929);
+    
+}
+
+.fondoSeccion{
+    background-image: linear-gradient(#292929,black, black,black,black,black, #851919,black);
+}
