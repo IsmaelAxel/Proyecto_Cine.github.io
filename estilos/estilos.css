@@ -325,6 +325,21 @@ input:focus{
     margin: 0px 20rem 0px 0px;
 }
 
+@media screen and (max-width: 600px) {
+    .arregloPosicion{
+        display: none;
+    }
+
+}
+
+@media screen and(max-width: 768px) {
+    
+}
+
+/* ZONA HAMBURGUESA*/
+
+
+
 /*Termina la zona de nico */
 
 /*Zona de Ismael*/
