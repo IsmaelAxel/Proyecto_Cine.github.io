@@ -474,7 +474,70 @@ animation-iteration-count: infinite;
 
 
 /*Termina la zona de nosotros*/
+/*Empieza zona de catalogo*/
+.head{
+    text-align: center;
+    color: #851919;
+}
 
+.container{
+   display: flex;
+   flex-direction: row;
+   gap: 5em;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+}
+.tarjeta{
+    width: 250px;
+    height: 600px;
+    margin-top: 2px;
+    background-color: #851919;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+.cuerpo{
+    padding: 10px;
+}
+.tarjeta img{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+
+}
+.btn{
+    background-color: #851919;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 10px
+    ;
+   }
+   .btn:hover{
+    background-color: #23272a;
+    color: #fff;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 50px 50px 0 rgba(0,0,0,0.19);
+   }
+
+  
+  
+
+
+
+
+/*Termina la zona de catalogo*/
 
 @media screen and (max-width:650px){
     
