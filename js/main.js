@@ -1,6 +1,6 @@
 let url = "../json/Film.json";
-let datos = (apiUrl) => {
-  return fetch(apiUrl)
+let datos = (url) => {
+  return fetch(url)
     .then(response => response.json())
     .then( json => { pelis(json);})
     }
