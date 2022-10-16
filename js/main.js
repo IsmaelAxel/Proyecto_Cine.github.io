@@ -3,8 +3,7 @@ let datos = (apiUrl) => {
   return fetch(apiUrl)
     .then(response => response.json())
     .then( json => { pelis(json);})
-    .catch( error => {console.error('error', error)})
-}
+    }
 
 
 let pelis = (_data) =>{
