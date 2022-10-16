@@ -1,4 +1,4 @@
-let url = "../json/vinos.json";
+let url = "../json/Film.json";
 let datos = (apiUrl) => {
   return fetch(apiUrl)
     .then(response => response.json())
