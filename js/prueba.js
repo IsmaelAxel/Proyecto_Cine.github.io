@@ -1,9 +1,10 @@
 const { createApp } = Vue
+ movies = "../json/Film.json"
 
   createApp({
     data() {
       return {
-        url:"../json/Film.json",
+        url: movies,
         pelis:[]
       }
     },
@@ -20,3 +21,4 @@ const { createApp } = Vue
     }
 
   }).mount('#app')
+
