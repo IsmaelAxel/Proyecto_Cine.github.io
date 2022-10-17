@@ -1,4 +1,4 @@
-let url = "../json/Film.json";
+let url = "https://my-json-server.typicode.com/IsmaelAxel/API_Pelis/peliculas";
 let datos = (url) => {
   return fetch(url)
     .then(response => response.json())
