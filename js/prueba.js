@@ -1,10 +1,9 @@
 const { createApp } = Vue
- movies = "../json/Film.json"
 
   createApp({
     data() {
       return {
-        url: movies,
+        url: "https://my-json-server.typicode.com/IsmaelAxel/API_Pelis/peliculas",
         pelis:[]
       }
     },
