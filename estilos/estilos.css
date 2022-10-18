@@ -410,10 +410,6 @@ animation-iteration-count: infinite;
     border-radius: 15px;
 }
 
-.arregloImagen{
-    
-  /* aca va como arreglar la imagen que no arregle */
-}
 
 .fuenteBusqueda{
     color: #fff;
@@ -452,10 +448,6 @@ input:focus{
 .fondoNosotros{
     background-image: linear-gradient(#212121,#000, #000,#000,#000,#000, #851919,#851919);
 }
-.fondoNosotros{
-    
-}
-
 
 .arregloPosicion{
     margin: 0px 20rem 0px 0px;
