@@ -15,23 +15,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <a href="../index.html" class="logo"> <img src="../imagenes/logo png.png" width="40px"> Proyecto Cine</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="foro.html">Foro</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        
-        </nav>
+        <div class="contenedorHamburguesa">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">⛧</span>
+            </label>
+            <div class="logoResponsivo">
+                <a href="./index.html" class="logo"><img src="../imagenes/logo png.png" width="60px">
+                    <p class="tituloHeader">Proyecto&#128973;<!-- ⛧ -->cine</p>
+                </a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../catalogo.html">Catalogo</a></li>
+                    <li><a href="../registro.html">Registro</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+
+                </ul>
+
+            </nav>
+
+          
+        </div>
+
+
+
     </header>
+    <span class="linea"></span>
     <main>
         <div class="recomendados">
             <div class="informacion sinopsis--1">
@@ -51,7 +71,7 @@
                     Producción: Diana Frey, Alejandro Doria y Susy Suranyi<br>
                     Guion: Alejandro Doria y Jacobo Langsner
                 </p>
-                <br><br>
+                <br>
                 <a href="../index.html"><img src="../imagenes/atras.png" alt="Boton de atras" width="60" height="60"></a>
             </div>
             <div class="informacion video--4"><iframe width="931" height="698"
@@ -60,7 +80,8 @@
                     allowfullscreen></iframe></div>
         </div>
     </main>
-    <footer>
+    <span class="linea"></span>
+    <footer class="fondoFooter">
         <div class="contenedor">
             <h3 class="titulo-seccion">Contacta con Nosotros</h3>
         </div>
@@ -75,9 +96,11 @@
             <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
         </div>
         <br>
+        <br>
 
     </footer>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

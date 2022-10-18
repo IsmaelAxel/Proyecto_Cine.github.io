@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,167 +8,207 @@
     <title>Proyecto_Cine</title>
     <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-<!--Fuentes-->
-<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="./imagenes/icono estrella.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/icono estrella.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <div class="contenedor">
-        <a href="#" class="logo"> <img src="./imagenes/logo png.png" width="120px"> Proyecto Cine</a>
-    </div>
-    <div class="arregloPosicion">
-    <nav class="fuenteNavegador">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="foro.html">Foro</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-        </ul>
-    
-    </nav>
-</div>
-<div>
-    <label for="busqueda" class="fuenteBusqueda">BUSQUEDA</label>
-    <input type="search" name="nombrePelicula" id="numero" placeholder="indique el nombre de la pelicula" size="50">
-</div>
+        <div class="contenedorHamburguesa">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">⛧</span>
+            </label>
+            <div class="logoResponsivo">
+                <a href="./index.html" class="logo"><img src="./imagenes/logo png.png" width="60px">
+                    <p class="tituloHeader">Proyecto&#128973;<!-- ⛧ -->cine</p>
+                </a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+
+
     </header>
+    <span class="linea"></span>
     <main class="fondoMain">
-<br>        
-<!--Zona de Nico-->
-<h2>Estrenos</h2>
-<span class="linea"></span>
-<section class="contenedor_flex">
-    <div class="div_animation"><a href="./sinopsis_estrenos/winnieThePooh.html" ><img src="./imagenes_nico/1 winnie the pooh blood and honey.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/barbie.html" ><img src="./imagenes_nico/2 barbie 2022.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/expendables4.html" ><img src="./imagenes_nico/3 the expendables.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/avatar.html" ><img src="./imagenes_nico/4 avatar way of the water.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/hocusPocus2.html" ><img src="./imagenes_nico/5 el regreso de las brujas 2.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/weird.html" ><img src="./imagenes_nico/6 weird al yankovich story.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/pinocho.html" ><img src="./imagenes_nico/7 pinocho.webp" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/blonde.html" ><img src="./imagenes_nico/8 blonde 2002.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/mySonHunter.html" ><img src="./imagenes_nico/9 my son hunter.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/noTePreocupesCariño.html" ><img src="./imagenes_nico/10 no te preocupes querida.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/theWhale.html" ><img src="./imagenes_nico/11 the whale.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/bonesAndAll.html" ><img src="./imagenes_nico/12 bones and all.webp" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/cuttillpulit.html" ><img src="./imagenes_nico/13 cuttputilli.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/oneWay.html" ><img src="./imagenes_nico/14 one way.jpg" alt="" class="caja"></a></div>
-    <div><a href="./sinopsis_estrenos/LaVillaDelAmor.html" ><img src="./imagenes_nico/15 la villa del amor.webp" alt="" class="caja"></a></div>
 
-</section>
-<!--Termina la zona de nico-->
-<br>
-<!--Zona de Ismael-->
-<h2>Clasicos</h2>
-<span class=""></span>
-<section class="clasicc">
-    <figure class="clasicc_picture clasicc_picture--g1">
-        <a href="./sinopsis_recomendados/rocky.html"><img src="./imagenes_ismael/img1.jpg" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g2">
-        <a href="./sinopsis_recomendados/star_wars.html" ><img src="./imagenes_ismael/img2.png" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g3">
-        <a href="./sinopsis_recomendados/volver_al_futuro.html" ><img src="./imagenes_ismael/img3.jpg" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g5">
-        <a href="./sinopsis_recomendados/viernes_13.html" ><img src="./imagenes_ismael/img5.jpg" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g4">
-        <a href="./sinopsis_recomendados/shining.html" ><img src="./imagenes_ismael/img4.webp" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g6">
-        <a href="./sinopsis_recomendados/scarface.html" ><img src="./imagenes_ismael/img6.jpg" class="clasico" ></a>
-    </figure>
-    <figure class="clasicc_picture clasicc_picture--g7">
-        <a href="./sinopsis_recomendados/la_carroza.html" ><img src="./imagenes_ismael/img7.jpg" class="clasico" ></a>
-    </figure>
-</section>
-<!--Termina la Zona de Ismael-->
-<br>
-<!--Zona de Ezequiel-->
-<a name="reomendadas"></a>
-<h2>Películas Recomendadas</h2>
-<span class="linea"></span>
-<section class="galeria fondoEstilos">
-    <a href="#image1"><img src="./imagenes/recomendadas/spiderman.jpg" alt=""></a>
-    <a href="#image2"><img src="./imagenes/recomendadas/dumbledore.jpg" alt=""></a>
-    <a href="#image3"><img src="./recomendadas/mas alla del infinito.jpg" alt=""></a>
-    <a href="#image4"><img src="./recomendadas/adam5.jpg" alt=""></a>
-    <a href="#image5"><img src="./recomendadas/spiderhead2.webp" alt=""></a>
-    <a href="#image6"><img src="./recomendadas/strange2.jpg" alt=""></a>
-</section>
+        <br>
+        <!--Zona de Nico-->
+        <h2>Estrenos</h2>
 
-<article class="light-box" id="image1"> 
-    <a href="#image6" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/spiderman.html"><img src="./imagenes/recomendadas/spiderman.jpg" alt=""></a>
-    <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        <section class="contenedor_flex">
+            <div class="div_animation"><a href="./sinopsis_estrenos/winnieThePooh.html"><img
+                        src="./imagenes_nico/1 winnie the pooh blood and honey.jpg" alt="" class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/barbie.html"><img src="./imagenes_nico/2 barbie 2022.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/expendables4.html"><img src="./imagenes_nico/3 the expendables.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/avatar.html"><img src="./imagenes_nico/4 avatar way of the water.jpg"
+                        alt="" class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/hocusPocus2.html"><img
+                        src="./imagenes_nico/5 el regreso de las brujas 2.jpg" alt="" class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/weird.html"><img src="./imagenes_nico/6 weird al yankovich story.jpg"
+                        alt="" class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/pinocho.html"><img src="./imagenes_nico/7 pinocho.webp" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/blonde.html"><img src="./imagenes_nico/8 blonde 2002.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/mySonHunter.html"><img src="./imagenes_nico/9 my son hunter.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/noTePreocupesCariño.html"><img
+                        src="./imagenes_nico/10 no te preocupes querida.jpg" alt="" class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/theWhale.html"><img src="./imagenes_nico/11 the whale.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/bonesAndAll.html"><img src="./imagenes_nico/12 bones and all.webp" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/cuttillpulit.html"><img src="./imagenes_nico/13 cuttputilli.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/oneWay.html"><img src="./imagenes_nico/14 one way.jpg" alt=""
+                        class="caja"></a></div>
+            <div><a href="./sinopsis_estrenos/LaVillaDelAmor.html"><img src="./imagenes_nico/15 la villa del amor.webp"
+                        alt="" class="caja"></a></div>
 
-<article class="light-box" id="image2"> 
-    <a href="#image1" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/dumbledore.html"><img src="./imagenes/recomendadas/dumbledore.jpg" alt=""></a>
-    <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        </section>
+        <!--Termina la zona de nico-->
+        <br><br>
+        <!--Zona de Ismael-->
+        <h2>Clasicos</h2>
+        <span class=""></span>
+        <section class="clasicc">
+            <figure class="clasicc_picture clasicc_picture--g1">
+                <a href="./sinopsis_recomendados/rocky.html"><img src="./imagenes_ismael/img1.jpg" class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g2">
+                <a href="./sinopsis_recomendados/star_wars.html"><img src="./imagenes_ismael/img2.png"
+                        class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g3">
+                <a href="./sinopsis_recomendados/volver_al_futuro.html"><img src="./imagenes_ismael/img3.jpg"
+                        class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g5">
+                <a href="./sinopsis_recomendados/viernes_13.html"><img src="./imagenes_ismael/img5.jpg"
+                        class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g4">
+                <a href="./sinopsis_recomendados/shining.html"><img src="./imagenes_ismael/img4.webp"
+                        class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g6">
+                <a href="./sinopsis_recomendados/scarface.html"><img src="./imagenes_ismael/img6.jpg"
+                        class="clasico"></a>
+            </figure>
+            <figure class="clasicc_picture clasicc_picture--g7">
+                <a href="./sinopsis_recomendados/la_carroza.html"><img src="./imagenes_ismael/img7.jpg"
+                        class="clasico"></a>
+            </figure>
+        </section>
+        <!--Termina la Zona de Ismael-->
+        <br><br>
+        <!--Zona de Ezequiel-->
+        <a name="reomendadas"></a>
+        <h2>Películas Recomendadas</h2>
 
-<article class="light-box" id="image3"> 
-    <a href="#image2" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/lightyear.html"><img src="./imagenes/recomendadas/lightyear.jpg" alt=""></a>
-    <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        <section class="galeria fondoEstilos">
+            <a href="#image1"><img src="./imagenes/recomendadas/spiderman.jpg" alt=""></a>
+            <a href="#image2"><img src="./imagenes/recomendadas/dumbledore.jpg" alt=""></a>
+            <a href="#image3"><img src="./recomendadas/mas alla del infinito.jpg" alt=""></a>
+            <a href="#image4"><img src="./recomendadas/adam5.jpg" alt=""></a>
+            <a href="#image5"><img src="./recomendadas/spiderhead2.webp" alt=""></a>
+            <a href="#image6"><img src="./recomendadas/strange2.jpg" alt=""></a>
+        </section>
 
-<article class="light-box" id="image4"> 
-    <a href="#image3" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/adam.html"> <img src="./imagenes/recomendadas/adam.jpg" alt=""> </a>
-    <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        <article class="light-box" id="image1">
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/spiderman.html"><img src="./imagenes/recomendadas/spiderman.jpg" alt=""></a>
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
 
-<article class="light-box" id="image5"> 
-    <a href="#image4" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/spiderhead.html">  <img src="./imagenes/recomendadas/What-Is-the-Meaning-of-Spiderhead-Title1-1.png" alt=""></a>
-    <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/dumbledore.html"><img src="./imagenes/recomendadas/dumbledore.jpg" alt=""></a>
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
 
-<article class="light-box" id="image6"> 
-    <a href="#image5" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <a href="./recomendadas/strange.html">  <img src="./imagenes/recomendadas/d strange.jpg" alt=""></a>
-    <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
-    <a href="#recomendadas" class="close">X</a>
-</article>
+        <article class="light-box" id="image3">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/lightyear.html"><img src="./imagenes/recomendadas/lightyear.jpg" alt=""></a>
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image4">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/adam.html"> <img src="./imagenes/recomendadas/adam.jpg" alt=""> </a>
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image5">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/spiderhead.html"> <img
+                    src="./imagenes/recomendadas/What-Is-the-Meaning-of-Spiderhead-Title1-1.png" alt=""></a>
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image6">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+            <a href="./recomendadas/strange.html"> <img src="./imagenes/recomendadas/d strange.jpg" alt=""></a>
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#recomendadas" class="close">X</a>
+        </article>
 
 
-<!--Termina la zona de ezequiel-->
-<br>
+        <!--Termina la zona de ezequiel-->
+        <br>
+       
     </main>
+    <span class="linea"></span>
     <footer class="fondoFooter">
         <div class="contenedor">
             <h3 class="titulo-seccion">Contacta con Nosotros</h3>
         </div>
-        <div class="redes-sociales"> 
-                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-<br>
-        <div>
-            <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>  
+        <div class="redes-sociales">
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <br>
-           
+        <div>
+            <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
+        </div>
+        <br>
+        <br>
+
     </footer>
-    <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script> 
-    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
+    
 </body>
+
 </html>

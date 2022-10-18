@@ -20,23 +20,42 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo"> <img src="../imagenes/logo png.png" width="40px"> Proyecto Cine</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Catalogo</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><a href="#">Foro</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+        <div class="contenedorHamburguesa">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">⛧</span>
+            </label>
+            <div class="logoResponsivo">
+                <a href="./index.html" class="logo"><img src="./imagenes/logo png.png" width="60px">
+                    <p class="tituloHeader">Proyecto&#128973;<!-- ⛧ -->cine</p>
+                </a>
+            </div>
 
-        </nav>
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                </ul>
+
+            </nav>
+
+            </nav>
+        </div>
+
+
+
     </header>
+    <span class="linea"></span>
     <main class="fondoMain">
         <h2 class="NosotrosCentrado">Un poco de nosotros</h2>
-        <span class=""></span>
+        
         <br>
-        <div class="Nosotros fondoFooter">
+        <div class="Nosotros fondoNosotros">
             <div class="biografia texto--1">
                 <p>Somos un grupo de estudiantes de programacion, aficionados de las peliculas. <br>
                     Tenemos pasatiempos como el trabajo harduo y obviamente ver peliculas y <br>
@@ -56,7 +75,7 @@
         <h2 class="NosotrosCentrado">Equipo</h2>
         <span class=""></span>
         <br>
-        <div class="bioIzq fondoFooter">
+        <div class="bioIzq fondoNosotros">
             <div class="biografia texto--1">
                 <h3 class="bioCentrada">Ismael Callamullo</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempore laboriosam odit quod fugit
@@ -67,7 +86,7 @@
                     Cum, porro soluta aut nisi tenetur dolores maxime fugiat eius nobis in veniam sit debitis! Rerum
                     odio quae repudiandae esse voluptate? Maxime.
                 </p>
-                <br> <br>
+                <br> <br> <br> <br> <br> <br>
                 <ul align="center">
                     <li><a href="#" class="bioA">Instagram</a></li>
                     <li><a href="#" class="bioA">Discord</a></li>
@@ -79,7 +98,7 @@
             </div>
         </div>
         <br>
-        <div class="Nosotros fondoFooter">
+        <div class="Nosotros fondoNosotros">
             <div class="biografia texto--1">
                 <h3 class="bioCentrada">Nicolas Rodriguez</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempore laboriosam odit quod fugit
@@ -90,7 +109,7 @@
                     Cum, porro soluta aut nisi tenetur dolores maxime fugiat eius nobis in veniam sit debitis! Rerum
                     odio quae repudiandae esse voluptate? Maxime.
                 </p>
-                <br> <br>
+                <br> <br> <br> <br> <br> <br>
                 <ul align="center">
                     <li><a href="#" class="bioA">Instagram</a></li>
                     <li><a href="#" class="bioA">Discord</a></li>
@@ -102,7 +121,7 @@
             </div>
         </div>
         <br>
-        <div class="bioIzq fondoFooter">
+        <div class="bioIzq fondoNosotros">
             <div class="biografia texto--1">
                 <h3 class="bioCentrada">Ezequiel Muñoz</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempore laboriosam odit quod fugit
@@ -113,7 +132,7 @@
                     Cum, porro soluta aut nisi tenetur dolores maxime fugiat eius nobis in veniam sit debitis! Rerum
                     odio quae repudiandae esse voluptate? Maxime.
                 </p>
-                <br> <br> 
+                <br> <br> <br> <br> <br> <br>
                 <ul align="center">
                     <li><a href="#" class="bioA">Instagram</a></li>
                     <li><a href="#" class="bioA">Discord</a></li>
@@ -126,21 +145,8 @@
         </div>
 
         <div class="NosotrosCentrado"><a href="index.html"><img src="./imagenes/atras.png" alt="Atras" height="60" width="60"></a></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
+    <span class="linea"></span>
     <footer class="fondoFooter">
         <div class="contenedor">
             <h3 class="titulo-seccion">Contacta con Nosotros</h3>
@@ -155,6 +161,7 @@
         <div>
             <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
         </div>
+        <br>
         <br>
 
     </footer>
