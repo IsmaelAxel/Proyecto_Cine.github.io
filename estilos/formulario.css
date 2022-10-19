@@ -227,14 +227,14 @@ h3 {
 
 nav ul li a{
     font-size: 24px;
-    color: #851919;
-    margin: 1rem;
+    color: #fff;
+    margin: 1em;
     width: 100%;
     
 }
 
 nav ul li a:hover{
-    color: rgb(253, 252, 253);
+    color: #851919;
 }
 
  
