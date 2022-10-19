@@ -588,6 +588,7 @@ input:focus{
 .sinopsis--1{
     grid-area: sinopsis;
     overflow: auto;
+    font-family: "Vollkorn";
 }
 .foto--2{
     grid-area: foto;
