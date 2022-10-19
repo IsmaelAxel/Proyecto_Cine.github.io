@@ -17,30 +17,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <a href="../index.html" class="logo"> <img src="../imagenes/logo png.png" width="40px"> Proyecto Cine</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="foro.html">Foro</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        
-        </nav>
+        <div class="contenedorHamburguesa">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">⛧</span>
+            </label>
+            <div class="logoResponsivo">
+                <a href="../index.html" class="logo"><img src="../imagenes/logo png.png" width="60px">
+                    <p class="tituloHeader">Proyecto&#128973;<!-- ⛧ -->cine</p>
+                </a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../catalogo.html">Catalogo</a></li>
+                    <li><a href="../registro.html">Registro</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+
+
     </header>
+    <span class="linea"></span>
     <main>
         <div class="recomendados">
             <div class="informacion sinopsis--1">
                 <h3>The Whale</h3>
                 <p>En The Whale, cinta de drama y comedia dirigida por Darren Aronofsky (Réquiem por un sueño), Charlie es un hombre moribundo y deprimido está atrapado en el sofá de su casa, en las afueras de Mormon Country, Idaho, comiendo sin saciar, esperando la muerte. Alcanzando un peso que casi alcanza los 300 kilogramos, es un hombre que se odia así mismo y es tan consciente de la incomodidad que su apariencia física genera en los demás que prefiere mencionarlo él mismo. Se ha separado de todas las personas que alguna vez quiso, incluyendo su ex esposa y su hija adolescente Ellie, siendo acompañado por Liz, su cuidadora, quien, aunque manifiesta una verdadera preocupación por él, parece estar cómoda junto a alguien que tiene más problemas que ella. <br><br> Un día cualquiera, Thomas, un joven misionero mormón, llega a su puerta, en un momento que parecía catastrófico pero que, poco a poco, se revela como el correcto y con su ayuda, Charlie decide que es tiempo de transformar su vida, proceso que inicia con el intento por reconectarse con Ellie.</p>
             </div>
-            <div class="informacion foto--2"><img src="../imagenes_nico/11 the whale.jpg" alt="" class="fotos"></div>
+            <div class="informacion foto--2 cuadroImagenSeccion"><img src="../imagenes_nico/11 the whale.jpg" alt="" class="fotos"></div>
             <div class="informacion info--3">
                 <p><br>
                     Dirección: 	Darren Aronofsky<br>
@@ -48,12 +68,13 @@
                     Guion: Samuel D. Hunter
                 </p>
                 <br><br>
-                <a href="../index.html"><img src="../imagenes/atras.png" alt="Boton de atras" width="60" height="60"></a>
+                <a href="../index.html"><img src="../imagenes/atras.png" alt="Boton de atras" width="40" height="40"></a>
             </div> <!-- width="931" height="698" -->
             <div class="informacion video--4"><iframe width="931" height="698" src="https://www.youtube.com/embed/H_uYUA95TR8" title="THE WHALE (2022) - OFFICIAL MOVIE TRAILER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </main>
-    <footer>
+    <span class="linea"></span>
+    <footer class="fondoFooter">
         <div class="contenedor">
             <h3 class="titulo-seccion">Contacta con Nosotros</h3>
         </div>
@@ -67,6 +88,7 @@
         <div>
             <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
         </div>
+        <br>
         <br>
 
     </footer>

@@ -15,30 +15,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="contenedor_flex">
-        <a href="../index.html" class="logo"> <img src="../imagenes/logo png.png" width="40px"> Proyecto Cine</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="foro.html">Foro</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-        
-        </nav>
+    <header>
+        <div class="contenedorHamburguesa">
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">⛧</span>
+            </label>
+            <div class="logoResponsivo">
+                <a href="../index.html" class="logo"><img src="../imagenes/logo png.png" width="60px">
+                    <p class="tituloHeader">Proyecto&#128973;<!-- ⛧ -->cine</p>
+                </a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../catalogo.html">Catalogo</a></li>
+                    <li><a href="../registro.html">Registro</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+
+
     </header>
+    <span class="linea"></span>
     <main class="fondoSeccion">
         <div class="recomendados">
             <div class="informacion sinopsis--1">
                 <h3>Winnie The PooH</h3>
                 <p>Una vuelta de tuerca siniestra a los personajes literarios creados por  Alan Alexander Milne. En esta película, Pooh y Piglet se convierten en los principales villanos, tras ser abandonados por un Christopher Robin que va a la universidad. El chico se aleja de ellos, y se desentiende de ellos, poniéndoles la existencia muy difícil. Como han tenido que valerse tanto por sí mismos, se han vuelto esencialmente salvajes:  han vuelto a sus raíces animales.<br><br> Ya no son amigables: son como un oso y un cerdo despiadados que quieren ante todo dar caza a muchas presas.</p>
             </div>
-            <div class="informacion foto--2"><img src="../imagenes_nico/1 winnie the pooh blood and honey.jpg" alt="" class="fotos linea1"></div>
+            <div class="informacion foto--2 cuadroImagenSeccion"><img src="../imagenes_nico/1 winnie the pooh blood and honey.jpg" alt="" class="fotos linea1"></div>
             <div class="informacion info--3">
                 <p><br>
                     Dirección:  Rhys Frake-Waterfield<br>
@@ -46,12 +66,13 @@
                     Guion: Rhys Frake-Waterfield, Scott Jeffrey
                 </p>
                 <br><br>
-                <a href="../index.html"><img src="../imagenes/atras.png" alt="Boton de atras" width="60" height="60"></a>
+                <a href="../index.html"><img src="../imagenes/atras.png" alt="Boton de atras" width="40" height="40"></a>
             </div> <!-- width="931" height="698" -->
             <div class="informacion video--4"><iframe width="931" height="698" src="https://www.youtube.com/embed/W3E74j_xFtg" title="Winnie the Pooh: Blood and Honey Trailer #1 (2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
     </main>
-    <footer class="fondoEstilos">
+    <span class="linea"></span>
+    <footer class="fondoFooter">
         <div class="contenedor">
             <h3 class="titulo-seccion">Contacta con Nosotros</h3>
         </div>
@@ -65,6 +86,7 @@
         <div>
             <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
         </div>
+        <br>
         <br>
 
     </footer>

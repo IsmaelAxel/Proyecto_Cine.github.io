@@ -361,10 +361,11 @@ footer.titulo-seccion{
     background: #23272a; 
   }
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 1, 1); 
+    background-image: linear-gradient(#000,#bb0d0d,#212121);
+    border-radius: 0.5em;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255); 
+    background-image: linear-gradient(#000,#fff,#212121);
   }
 
 .contenedor_flex > div{
