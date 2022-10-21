@@ -10,9 +10,7 @@ header{
     height: 100%;
     margin: 0;
     padding: 0; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
     background-image: linear-gradient(#851919,#212121,#000, #000,#000, #000,#000);
     /* background-image: linear-gradient(#851919,black,black,black, black,#292929); */
     
@@ -35,8 +33,8 @@ header{
 }
 .contenedorHamburguesa{
     display: flex;
-    flex-direction: row;
-    gap: 18.7em;
+
+    justify-content: space-between;
     
 }
 #menu-cerrar{
@@ -50,106 +48,7 @@ header{
     75% { color: #000}
     100% { color: #000}
 }
-@media only screen and (max-width: 576px) { 
-    .tituloHeader{
-        font-size: 55px;
-    }
-    #menu, #menu-check{
-        display: none;
-    }
-    #menu-check:not(:checked) ~ nav{
-        display: none;
-    }
-    #menu-check:checked ~ nav{
-        display: block;
 
-    }
-    #menu{
-        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
-        display: block;
-        position: fixed;
-        right: 0em;
-        top: .5em;
-        margin: 0 20px;
-        border: 3px solid #851919;
-        color: #bb0d0d;
-        font-size: 2em;
-        font-weight: bold;
-        border: 3px groove #851919;
-        border-radius: 0.3em;
-        z-index: 9999;
-        width: 1.5em;
-        text-align: center;
-
-    }
-    #menu:hover{
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
-        transform: scale(1.1);
-        transition: width 2s, height 2s, transform 3s;
-        animation-name: lineacolor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-
-    }
-    #menu-abrir:hover{
-        animation-name: fuenteColor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    #menu-cerrar:hover{
-        animation-name: fuenteColor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    #menu-check:checked ~ label #menu-abrir{
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-cerrar{
-        display: block;
-    }
-    header div.contenedorHamburguesa nav{
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 40%;
-        width: 100%;
-        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
-        /* background-color: #f9fd00; */
-        padding-top: 1.8em;
-        padding-right: 0em;
-        
-        font-size: 1.7em;
-        font-family: 'Teko';
-        z-index: 99;
-        opacity: 0.9;
-
-    }
-    header div.contenedorHamburguesa nav ul a{
-        color: #f8f8f8;
-        background-color: none;
-    }
-    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
-        display: block;
-        text-align: center;
-
-    }
-    header div.contenedorHamburguesa nav a{
-        border: 0;
-        border-radius: 0;
-
-    }
-    header div.contenedorHamburguesa nav a:hover{
-        color: #bb0d0d;
-         /* background-image:radial-gradient(red,black,red) ; */
-     }
-     header div.contenedorHamburguesa nav ul li a{
-         font-size: 1.2em;
-         font-family: 'Teko';
- 
- 
-     }
-}
 .absolute{
     width: 100%;
     height: 100px;
@@ -241,44 +140,9 @@ nav ul li a:hover{
     color: #851919;
 }
 
-/* Media Query */
 
-/* @media only screen and (max-width:800px){
-    header{
-        
-        width:100%;
-        height: 100px;
-        margin: 0 auto; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction:column
-    }
-    nav ul{
-        width: 350px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
 
-    h1{
-        font-size: 50px;
 
-    }
-     
-}
-@media only screen and (max-width:500px){
-
-h1{
-    font-size: 30px;
-    margin-bottom: 0;
-    }
-h1::after{
-    display: none;
-}
-}
- */
 
 body {
    
@@ -291,7 +155,7 @@ h2 {
     text-align: left;
     padding: 20px 0;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color:#fff;
     margin: .2em;
     font-family: 'Limelight', cursive;
 }
@@ -396,11 +260,7 @@ animation-iteration-count: infinite;
     100% { border: 5px double black}
 }
 
-/* @media screen and (max-width: 650px){
-    .contenedor_flex{
-        gap: 5em;
-    }
-} */
+
 
 .trailer_estrenos{
     text-align: center;
@@ -450,7 +310,7 @@ input:focus{
 }
 
 .fondoNosotros{
-    background-image: linear-gradient(#fff,#212121, #000,#000,#000,#000, #851919,#851919);
+    background-image: linear-gradient(#000,#000, #000,#000,#000,#000, #851919,#851919);
 }
 .linea1{
     border: 3px ridge #fff;
@@ -459,12 +319,7 @@ input:focus{
     margin: 0px 20rem 0px 0px;
 }
 
-/* @media screen and (max-width: 600px) {
-    .arregloPosicion{
-        display: none;
-    }
 
-} */
 
 
 
@@ -619,6 +474,7 @@ input:focus{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
     gap: 1em;
+    
     grid-template-areas:
     "texto texto foto"
     "texto texto foto"
@@ -640,7 +496,8 @@ input:focus{
     grid-template-areas:
     "foto texto texto"
     "foto texto texto"
-    "foto texto texto";
+    "foto texto texto"
+    ;
 }
 .biografia{
     position: relative;
@@ -649,6 +506,7 @@ input:focus{
 .texto--1{
     grid-area: texto;
     overflow: hidden;
+    font-family: "Vollkorn";
 }
 .foto--2{
     grid-area: foto;
@@ -674,7 +532,12 @@ input:focus{
     color: #fff;
 }
 
-
+.enlacesNosotros{
+    font-family: "LimeLight";
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
 
 
 /*Termina la zona de nosotros*/
@@ -716,7 +579,7 @@ input:focus{
 }
 .btn{
     background-color: #851919;
-    border: none;
+ 
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -743,62 +606,6 @@ input:focus{
 
 /*Termina la zona de catalogo*/
 
-@media screen and (max-width:650px){
-    
-    .clasicc{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "img5 img5"
-        "img1 img2"
-        "img3 img4"
-        "img6 img7";
-    }
-    .recomendados{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "foto foto"
-        "foto foto"
-        "foto foto"
-        "foto foto"
-        "info info"
-        "info info"
-        "sinopsis sinopsis"
-        "sinopsis sinopsis"
-        "sinopsis sinopsis"
-        "sinopsis sinopsis"
-        "video video"
-        "video video"
-        "video video";
-    }
-    .Nosotros{
-        grid-template-columns: (3, 1fr);
-        grid-template-areas: 
-        "foto foto foto" 
-        "foto foto foto"
-        "foto foto foto"
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto"
-        ;
-    }
-    .bioIzq{
-        grid-template-columns: (3, 1fr);
-        grid-template-areas: 
-        "foto foto foto" 
-        "foto foto foto"
-        "foto foto foto"
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto" 
-        "texto texto texto"
-        "texto texto texto" ;
-    }
-   
-}
 
 /*Termina la zona de Ismael */
 
@@ -920,22 +727,324 @@ input:focus{
 }
 
 
-/* @media screen and (max-width:400px){
-    .galeria{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
 
-    .close{
-      top:20px;
-      right: 20px;  
-    }
-    
-} */
     
 
 
 
 
 /*Termina la zona de eze */
+@media screen and (min-width : 0px) and (max-width : 567px){
+    
+    /*Grilla*/
+   
+    .clasicc{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img5 img5"
+        "img1 img2"
+        "img3 img4"
+        "img6 img7";
+    }
+    .recomendados{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "foto foto"
+        "foto foto"
+        "foto foto"
+        "foto foto"
+        "info info"
+        "info info"
+        "sinopsis sinopsis"
+        "sinopsis sinopsis"
+        "sinopsis sinopsis"
+        "sinopsis sinopsis"
+        "video video"
+        "video video"
+        "video video";
+    }
+    .Nosotros{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas: 
+        "foto foto foto" 
+        "foto foto foto"
+        "foto foto foto"
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+   
+        
+        ;
+    }
+    .bioIzq{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas: 
+        "foto foto foto" 
+        "foto foto foto"
+        "foto foto foto"
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto" 
+        "texto texto texto"
+        "texto texto texto" 
+
+         ;
+    }
+
+    .enlacesNosotros{
+        flex-direction: column;
+        text-align: center;
+    }
+    .linea{
+        margin-bottom: 1em;
+    }
+    /*MenuHamburguesa*/
+   
+    .tituloHeader{
+        font-size: 44px;
+        
+    }
+    header{
+        margin-bottom: 1em;
+    }
+    #menu, #menu-check{
+        display: none;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+
+    }
+    #menu{
+        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
+        display: block;
+        position: fixed;
+        right: 0em;
+        top: .5em;
+        margin: 0 20px;
+        border: 3px solid #851919;
+        color: #bb0d0d;
+        font-size: 2em;
+        font-weight: bold;
+        border: 3px groove #851919;
+        border-radius: 0.3em;
+        z-index: 9999;
+        width: 1.5em;
+        text-align: center;
+
+    }
+    #menu:hover{
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
+        transform: scale(1.1);
+        transition: width 2s, height 2s, transform 3s;
+        animation-name: lineacolor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    #menu-abrir:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-cerrar:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header div.contenedorHamburguesa nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40%;
+        width: 100%;
+        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
+        /* background-color: #f9fd00; */
+        padding-top: 1.8em;
+        padding-right: 0em;
+        
+        font-size: 1.7em;
+        font-family: 'Teko';
+        z-index: 99;
+        opacity: 0.9;
+
+    }
+    header div.contenedorHamburguesa nav ul a{
+        color: #f8f8f8;
+        background-color: none;
+    }
+    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
+        display: block;
+        text-align: center;
+
+    }
+    header div.contenedorHamburguesa nav a{
+        border: 0;
+        border-radius: 0;
+
+    }
+    header div.contenedorHamburguesa nav a:hover{
+        color: #bb0d0d;
+         /* background-image:radial-gradient(red,black,red) ; */
+     }
+     header div.contenedorHamburguesa nav ul li a{
+         font-size: 1.2em;
+         font-family: 'Teko';
+ 
+ 
+     }
+}
+@media screen and (min-width : 567px) and (max-width : 1200px){
+    .Nosotros{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas:
+        "texto texto foto"
+        "texto texto foto"
+        "texto texto foto"
+        "texto texto foto"
+        ;
+        
+    }
+    .bioIzq{
+        grid-template-columns: (3, 1fr);
+        grid-template-areas:
+        "texto texto foto"
+        "texto texto foto"
+        "texto texto foto"
+        "texto texto foto"
+        ;
+    }
+    
+    .clasicc{
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "img7 img7 img1 img1"
+        "img3 img3 img5 img5"
+        "img4 img4 img6 img6"
+        "img2 img2 img2 img2";
+
+    }
+    
+    
+    /*MenuHamburguesa*/
+    .tituloHeader{
+        font-size: 44px;
+    }
+    .contenedorHamburguesa{
+        justify-content: center;
+    }
+    header{
+        margin-bottom: 1em;
+    }
+    #menu, #menu-check{
+        display: none;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+
+    }
+    #menu{
+        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
+        display: block;
+        position: fixed;
+        right: 0em;
+        top: .5em;
+        margin: 0 20px;
+        border: 3px solid #851919;
+        color: #bb0d0d;
+        font-size: 2em;
+        font-weight: bold;
+        border: 3px groove #851919;
+        border-radius: 0.3em;
+        z-index: 9999;
+        width: 1.5em;
+        text-align: center;
+
+    }
+    #menu:hover{
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
+        transform: scale(1.1);
+        transition: width 2s, height 2s, transform 3s;
+        animation-name: lineacolor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    #menu-abrir:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-cerrar:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header div.contenedorHamburguesa nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40%;
+        width: 100%;
+        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
+
+        padding-top: 1.8em;
+        padding-right: 0em;
+        
+        font-size: 1.7em;
+        font-family: 'Teko';
+        z-index: 99;
+        opacity: 0.9;
+
+    }
+    header div.contenedorHamburguesa nav ul a{
+        color: #f8f8f8;
+        background-color: none;
+    }
+    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
+        display: block;
+        text-align: center;
+
+    }
+    header div.contenedorHamburguesa nav a{
+        border: 0;
+        border-radius: 0;
+
+    }
+    header div.contenedorHamburguesa nav a:hover{
+        color: #bb0d0d;
+
+     }
+     header div.contenedorHamburguesa nav ul li a{
+         font-size: 1.2em;
+         font-family: 'Teko';
+ 
+ 
+     }
+}
 
 

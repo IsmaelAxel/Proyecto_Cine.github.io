@@ -11,13 +11,10 @@ header{
     height: 100%;
     margin: 0;
     padding: 0; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
     background-image: linear-gradient(#851919,#212121,#000, #000,#000, #000,#000);
     /* background-image: linear-gradient(#851919,black,black,black, black,#292929); */
-    
-}
+    }
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -48,8 +45,8 @@ header{
 }
 .contenedorHamburguesa{
     display: flex;
-    flex-direction: row;
-    gap: 18.7em;
+  
+    justify-content: space-between;
 	
     
 }
@@ -65,104 +62,7 @@ header{
     100% { color: #000}
 }
 @media only screen and (max-width: 576px) { 
-    .tituloHeader{
-        font-size: 55px;
-    }
-    #menu, #menu-check{
-        display: none;
-    }
-    #menu-check:not(:checked) ~ nav{
-        display: none;
-    }
-    #menu-check:checked ~ nav{
-        display: block;
-
-    }
-    #menu{
-        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
-        display: block;
-        position: fixed;
-        right: 0em;
-        top: .5em;
-        margin: 0 20px;
-        border: 3px solid #851919;
-        color: #bb0d0d;
-        font-size: 2em;
-        font-weight: bold;
-        border: 3px groove #851919;
-        border-radius: 0.3em;
-        z-index: 9999;
-        width: 1.5em;
-        text-align: center;
-
-    }
-    #menu:hover{
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
-        transform: scale(1.1);
-        transition: width 2s, height 2s, transform 3s;
-        animation-name: lineacolor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-
-    }
-    #menu-abrir:hover{
-        animation-name: fuenteColor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    #menu-cerrar:hover{
-        animation-name: fuenteColor;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    #menu-check:checked ~ label #menu-abrir{
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-cerrar{
-        display: block;
-    }
-    header div.contenedorHamburguesa nav{
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 40%;
-        width: 100%;
-        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
-        /* background-color: #f9fd00; */
-        padding-top: 1.8em;
-        padding-right: 0em;
-        
-        font-size: 1.7em;
-        font-family: 'Teko';
-        z-index: 99;
-        opacity: 0.9;
-
-    }
-    header div.contenedorHamburguesa nav ul a{
-        color: #f8f8f8;
-        background-color: none;
-    }
-    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
-        display: block;
-        text-align: center;
-
-    }
-    header div.contenedorHamburguesa nav a{
-        border: 0;
-        border-radius: 0;
-
-    }
-    header div.contenedorHamburguesa nav a:hover{
-        color: #bb0d0d;
-         /* background-image:radial-gradient(red,black,red) ; */
-     }
-     header div.contenedorHamburguesa nav ul li a{
-         font-size: 1.2em;
-         font-family: 'Teko';
- 
- 
-     }
+   
 }
 .linea{
     background: #bb0d0d;
@@ -381,24 +281,12 @@ main {
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
 }
-
+.boton{
+    text-align: center;
+}
 
 /* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
 
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
-}
 
 /*EMPIEZA FOOTER */
 
@@ -450,4 +338,230 @@ agregado de estilos
 
 .fondoSeccion{
     background-image: linear-gradient(#292929,black, black,black,black,black, #851919,black);
+}
+@media screen and (min-width : 0px) and (max-width : 567px) {
+    .linea{
+        margin-bottom: 1em;
+
+    }
+    header{
+        margin-bottom: 1em;
+    }
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+    .tituloHeader{
+        font-size: 44px;
+    }
+    #menu, #menu-check{
+        display: none;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+
+    }
+    #menu{
+        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
+        display: block;
+        position: fixed;
+        right: 0em;
+        top: .5em;
+        margin: 0 20px;
+        border: 3px solid #851919;
+        color: #bb0d0d;
+        font-size: 2em;
+        font-weight: bold;
+        border: 3px groove #851919;
+        border-radius: 0.3em;
+        z-index: 9999;
+        width: 1.5em;
+        text-align: center;
+
+    }
+    #menu:hover{
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
+        transform: scale(1.1);
+        transition: width 2s, height 2s, transform 3s;
+        animation-name: lineacolor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    #menu-abrir:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-cerrar:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header div.contenedorHamburguesa nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40%;
+        width: 100%;
+        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
+        /* background-color: #f9fd00; */
+        padding-top: 1.8em;
+        padding-right: 0em;
+        
+        font-size: 1.7em;
+        font-family: 'Teko';
+        z-index: 99;
+        opacity: 0.9;
+
+    }
+    header div.contenedorHamburguesa nav ul a{
+        color: #f8f8f8;
+        background-color: none;
+    }
+    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
+        display: block;
+        text-align: center;
+
+    }
+    header div.contenedorHamburguesa nav a{
+        border: 0;
+        border-radius: 0;
+
+    }
+    header div.contenedorHamburguesa nav a:hover{
+        color: #bb0d0d;
+         /* background-image:radial-gradient(red,black,red) ; */
+     }
+     header div.contenedorHamburguesa nav ul li a{
+         font-size: 1.2em;
+         font-family: 'Teko';
+ 
+ 
+     }
+}
+@media screen and (min-width : 567px) and (max-width : 1200px){
+    .tituloHeader{
+        font-size: 44px;
+    }
+    .contenedorHamburguesa{
+        justify-content: center;
+    }
+    header{
+        margin-bottom: 1em;
+    }
+    #menu, #menu-check{
+        display: none;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+
+    }
+    #menu{
+        background-image: linear-gradient(#851919,#000,#000,#292929,#fff);
+        display: block;
+        position: fixed;
+        right: 0em;
+        top: .5em;
+        margin: 0 20px;
+        border: 3px solid #851919;
+        color: #bb0d0d;
+        font-size: 2em;
+        font-weight: bold;
+        border: 3px groove #851919;
+        border-radius: 0.3em;
+        z-index: 9999;
+        width: 1.5em;
+        text-align: center;
+
+    }
+    #menu:hover{
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(#292929,#292929,#fff,#292929,#851919);
+        transform: scale(1.1);
+        transition: width 2s, height 2s, transform 3s;
+        animation-name: lineacolor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+    #menu-abrir:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-cerrar:hover{
+        animation-name: fuenteColor;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    header div.contenedorHamburguesa nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40%;
+        width: 100%;
+        background-image: linear-gradient(#000,#000,#000,#212121,#851919);
+
+        padding-top: 1.8em;
+        padding-right: 0em;
+        
+        font-size: 1.7em;
+        font-family: 'Teko';
+        z-index: 99;
+        opacity: 0.9;
+
+    }
+    header div.contenedorHamburguesa nav ul a{
+        color: #f8f8f8;
+        background-color: none;
+    }
+    header div.contenedorHamburguesa nav ul, header div.contenedorHamburguesa nav ul li{
+        display: block;
+        text-align: center;
+
+    }
+    header div.contenedorHamburguesa nav a{
+        border: 0;
+        border-radius: 0;
+
+    }
+    header div.contenedorHamburguesa nav a:hover{
+        color: #bb0d0d;
+
+     }
+     header div.contenedorHamburguesa nav ul li a{
+         font-size: 1.2em;
+         font-family: 'Teko';
+ 
+ 
+     }
 }
