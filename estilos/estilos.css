@@ -423,7 +423,7 @@ input:focus{
 .fotos{
     width: 100%;
     height: 100%;
-    
+
    
     }
     .cuadroImagenSeccion{
@@ -506,7 +506,7 @@ input:focus{
 }
 .texto--1{
     grid-area: texto;
-    overflow: hidden;
+    overflow: auto;
     font-family: "Vollkorn";
 }
 .foto--2{
@@ -971,7 +971,23 @@ input:focus{
 
     }
     
+    .recomendados{
+
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        grid-template-areas: 
+        "sinopsis sinopsis foto"
+        "sinopsis sinopsis foto"
+        "sinopsis sinopsis foto"
+        "video video info"
+        "video video info"
+        ;
+    }
+
+
+
     
+
     /*MenuHamburguesa*/
     .tituloHeader{
         font-size: 44px;
