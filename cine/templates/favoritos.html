@@ -54,8 +54,8 @@
 
     </header>
     <main>
-        <div class="container" id="app">
-            <h1>Productos</h1>
+        <h1 class="h1Favoritos">¡Tus favoritos!</h1>
+        <div class="containerInvertido" id="app">
             <section v-if="errored">
              <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
             </section>
@@ -66,34 +66,72 @@
                     </div>
                 </div>
                 <div v-else>
-                    <a href="create.html" class="btn btn-success">Nuevo</a>
-                    <br><br>
-                    <table class="table table-striped table-responsive">
-                        <tr>
-                            <th>Id</th>
-                            <th>Nombre</th>
-                            <th>valoracion</th>
-                            <th>img</th>
-                            
+                    <div class="containerInvertido">
+                        <div v-for="favorito of favoritos">
+                            <div class="tarjetaInvertida fondoNosotros linea1">
+                                    
+                                    <div class="posicionVertical">
+                                        <div>
+                                            <h4 class="numeroDeId">{{favorito.id}}</h4>
+                                        </div>
+                                        <img :src="favorito.img" :alt="" class="imagenFavoritos">
+                                    </div>
+                                    <div>
+                                        <h5 class="nombrePeliculaFavoritos">Titulo: {{favorito.nombre}}</h5>
+                                    </div>
 
-                        </tr>
-                        <tr v-for="favorito in favoritos">
-                            <td>{{favorito.id}}</td>
-                            <td>{{favorito.nombre}}</td>
-                            <td>{{favorito.valoracion}}</td>
-                            <td><img :src="favorito.img" :alt="" width="200" height="150"></td>
-                                <td>
-                                <a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" class="btn btn-primary">Modificar</a>
-                                <button v-on:click="eliminar(favorito.id)" class="btn btn-danger">Eliminar</button>
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptas. Exercitationem repellendus tempora at distinctio illo in. Corrupti, repellendus saepe eaque nemo beatae doloribus consequatur modi, non itaque, ratione voluptates.
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eos nesciunt voluptatum in, fugiat inventore eius nihil, temporibus eveniet, velit autem molestiae reiciendis fuga expedita incidunt iure porro atque aspernatur!
+                                        <div class="estrellas">
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                    <button class="botonFavoritos">Trailer</button></a>
+                                    
+                                    <button class="botonFavoritos"><a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" >{{favorito.valoracion}}
+                                    </a>
+                                    </button>
+                                    <!-- estrellas para valoracion
+                                    solida <i class="fa-solid fa-star"></i>
+                                    vacia <i class="fa-regular fa-star"></i>
+                                    -->
 
-                            </td>
-                        </tr>
-                    </table>
+                                    <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-dumpster-fire"></i></button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </div>
+            <footer class="fondoFooter">
+                <div class="contenedor">
+                    <h3 class="titulo-seccion">Contacta con Nosotros</h3>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/TomateDes" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <br>
+                <div>
+                    <p class="copy">2022 Isma-Nico-Eze / Todos los derechos reservados</p>
+                </div>
+                <br>
+                <br>
+        
+            </footer>
     </main>
+    <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <script src="./js/favoritos.js"></script>
 </body>
 </html>
+                                
