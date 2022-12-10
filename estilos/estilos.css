@@ -312,9 +312,9 @@ input:focus{
 .fondoNosotros{
     background-image: linear-gradient(#000,#000, #000,#000,#000,#000, #851919,#851919);
 }
-/* .linea1{
+.linea2{
     border: 3px ridge #fff;
-} */
+}
 .arregloPosicion{
     margin: 0px 20rem 0px 0px;
 }
@@ -398,12 +398,11 @@ input:focus{
     color: rgb(0, 0, 0);
 }
 .botonFavoritos i:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .botonFavoritos :hover{
 	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.658);
-    color: #fff;
     
 }
 
