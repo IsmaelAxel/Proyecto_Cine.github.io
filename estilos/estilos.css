@@ -320,12 +320,12 @@ input:focus{
 }
 
 .nombrePeliculaFavoritos{
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .imagenFavoritos{
-    width:15em;
-    height:15em;
+    width:10em;
+    height:10em;
     border-radius: 1em;
 }
 
@@ -361,9 +361,9 @@ input:focus{
 .containerInvertido{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     justify-content: left;
-    align-items: left;
+    align-items: center;
     flex-wrap: wrap;
     /* border: 3px solid rgb(213, 216, 17); */
     text-align: left;
@@ -371,10 +371,12 @@ input:focus{
 
 .h1Favoritos{
     color: red;
+    font-size: 2em;
+    text-align: center;
 }
 
 .botonFavoritos{
-	height: 3.5em;
+	height: 2em;
     margin: 2em 0em 0em 0em;
 	/* line-height: 45px; */
 	width: 9em;
@@ -406,8 +408,8 @@ input:focus{
 }
 
 .estrellas{
-    margin-top: 1.5em;
-    font-size: 4em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
 }
 
 .estrellaSolida{
