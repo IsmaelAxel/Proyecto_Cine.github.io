@@ -1,33 +1,46 @@
 function guardar() {
 
     let n = document.getElementById("txtNombre").value
-    let p = parseFloat(document.getElementById("txtPrecio").value)
-    let s = parseInt(document.getElementById("txtStock").value)
+    let v = parseFloat(document.getElementById("txtValoracion").value)
     let i = document.getElementById("txtImg").value
 
-    let producto = {
+    let favorito = {
         nombre: n,
-        precio: p,
-        stock: s,
+        valoracion: v,
         img: i
     }
-    let url = "http://localhost:5000/productos"
+
+    let url = "http://localhost:5000/favoritos"
     var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(favorito),
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        
        // redirect: 'follow'
     }
     fetch(url, options)
         .then(function () {
             console.log("creado")
-            alert("Grabado")
-
+            alert("Su pelicula se agrego exitosamente! :D")
+            window.location.href = "./favoritos.html"
             // Handle response we get from the API
         })
         .catch(err => {
             //this.errored = true
-            alert("Error al grabar" )
+            alert("No se pudo agregar su pelicula :(")
             console.error(err);
         })
 }
+const btnAbrirModal = 
+document.querySelector("#btn-abrir-modal");
+const cerrarModal = 
+document.querySelector("#btn-cerrar-modal");
+const modal =
+document.querySelector("#modal");
+
+btnAbrirModal.addEventListener("click",()=>{
+    modal.showModal();
+})
+cerrarModal.addEventListener("click",()=>{
+    modal.close();
+})
