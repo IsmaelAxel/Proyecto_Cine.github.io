@@ -95,7 +95,7 @@
                                     <div>
                                     <button class="botonFavoritos">Trailer</button></a>
                                     
-                                    <button class="botonFavoritos"><a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" >{{favorito.valoracion}}
+                                    <button class="botonFavoritos"><a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" ><p>{{favorito.valoracion}}</p>
                                     </a>
                                     </button>
                                     <!-- estrellas para valoracion
@@ -132,7 +132,7 @@
     </main>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <script src="./js/estrellas.js" defer></script>
     <script src="./js/favoritos.js"></script>
 </body>
 </html>

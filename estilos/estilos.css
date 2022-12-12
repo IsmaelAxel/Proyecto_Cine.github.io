@@ -397,21 +397,32 @@ input:focus{
     color: rgb(0, 0, 0);
 }
 
+.botonFavoritos a p:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*
 .botonFavoritos i{
     color: rgb(0, 0, 0);
 }
-.botonFavoritos i:hover{
-    color: rgb(0, 0, 0);
-}
 
-.botonFavoritos :hover{
+} */
+
+
+
+.botonFavoritos:hover{
 	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.658);
-    
+    color: #fff;
 }
 
 .estrellas{
     margin-top: 0.5em;
     font-size: 1.5em;
+    cursor: crosshair;
+}
+
+.estrellas i:hover{
+    color: red;
 }
 
 .estrellaSolida{
