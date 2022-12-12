@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,6 +110,34 @@
                     </div>
                 </div>
             </div>
+            <div align="center"><button class="btn" id="btn-abrir-modal">Añadir favorito!</button></div>
+            <dialog class="fondoNosotros" id="modal">
+            <div>
+                <h1>Proyecto⛧cine</h1>
+                <form>      
+                <div>
+                        <label for="txtNombre">Nombre</label>
+                        <br>
+                        <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
+                    </div>
+                    <div>
+                        <label for="txtValoracion">Valoracion</label><br>
+                        <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> <br>
+                    </div>
+                    
+                    <div>
+                        <label for="txtImg">Imagen(URL)</label><br>
+                        <input type="text" class="form-control" name="txtImg" id="txtImg"> <br>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+                    <button class="btn" id="btn-cerrar-modal">Cerrar</button>
+                   
+                </form>
+                <br>
+
+            </div>
+        </dialog>
+        </main>
             </section>
             <footer class="fondoFooter">
                 <div class="contenedor">
@@ -132,7 +160,7 @@
     </main>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <script src="./js/create.js"></script>
     <script src="./js/favoritos.js"></script>
 </body>
 </html>

@@ -14,6 +14,34 @@ header{
     /* background-image: linear-gradient(#851919,black,black,black, black,#292929); */
     
 }
+dialog {
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+dialog .btn{
+    padding: 10px 15px;
+    border-color: #fff;
+}
+
+dialog input{
+    text-align: center;
+    margin: 1em 0em;
+
+}
+dialog label{
+    font-family: "LimeLight";
+    font-weight: "bolder";
+}
+dialog h1{
+    font-size: 2em;
+    padding: .5em;
+    font-family: "Teko";
+}
+
+
 .tituloHeader{
     background: -webkit-linear-gradient(#fff,#fff,#292929,#fff);
     background-clip: border-box;
@@ -280,7 +308,7 @@ animation-iteration-count: infinite;
     
 }
 
-input{
+/* input{
     text-align: center;
     border-radius: 50px;
     background-color: black;
@@ -295,7 +323,7 @@ input:focus{
     outline-style: none;
     color: #851919;
     
-}
+} */
 
 .fondoFooter{
     background-image: linear-gradient(#000,#000, #000,#000,black,#212121, #851919);
