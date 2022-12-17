@@ -349,24 +349,32 @@ input:focus{
 
 
 .nombrePeliculaFavoritos{
-    font-size: 1.5em;
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
 .imagenFavoritos{
-    width:10em;
-    height:10em;
+    width:20em;
+    height:12em;
     border-radius: 1em;
+    object-fit: cover;
 }
 
+.flex-botones{
+    display: flex;
+    flex-direction: column;
+}
+.flex-botones button{
+    
+}
 .tarjetaInvertida{
     display: flex;
     direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 40%;
+    width: 50em;
+    height: 20em;
     margin-top: 1em;
-    margin-left: 7em;
     background-color: #851919;
     padding: 20px;
     border-radius: 20px;
@@ -425,7 +433,7 @@ input:focus{
     color: rgb(0, 0, 0);
 }
 
-.botonFavoritos a p:hover{
+.botonFavoritos a:hover{
     color: rgb(255, 255, 255);
 }
 
@@ -452,13 +460,17 @@ input:focus{
 .estrellas i:hover{
     color: red;
 }
-
-.estrellaSolida{
-
+.anclaFooter{
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px ridge #fff;
+    margin:1em;
 }
-
-.estrellaVacia{
-    
+.anclaFooter a{
+    color: #fff;
+}
+.anclaFooter:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
 

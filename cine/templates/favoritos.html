@@ -55,7 +55,10 @@
     <span class="linea"></span>
     <br>
     <main>
-        <h1 class="h1Favoritos">¡Tus favoritos!</h1>
+        <h1 class="h1Favoritos" id="anclaje">¡Tus favoritos!</h1>
+        <button class="anclaFooter fondoNosotros"> 
+            <a href="#footer">Ir al Fondo</a>
+            </button>
         <div class="containerInvertido" id="app">
             <section v-if="errored">
              <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
@@ -78,11 +81,7 @@
                                         <img :src="favorito.img" :alt="" class="imagenFavoritos">
                                     </div>
                                     <div>
-                                        <h5 class="nombrePeliculaFavoritos">Titulo: {{favorito.nombre}}</h5>
-                                    </div>
-
-                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, voluptas. Exercitationem repellendus tempora at distinctio illo in. Corrupti, repellendus saepe eaque nemo beatae doloribus consequatur modi, non itaque, ratione voluptates.
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eos nesciunt voluptatum in, fugiat inventore eius nihil, temporibus eveniet, velit autem molestiae reiciendis fuga expedita incidunt iure porro atque aspernatur!
+                                        <h5 class="nombrePeliculaFavoritos">{{favorito.nombre}}</h5>
                                         <div class="estrellas">
                                             <i class="fa-regular fa-star"></i>
                                             <i class="fa-regular fa-star"></i>
@@ -90,20 +89,20 @@
                                             <i class="fa-regular fa-star"></i>
                                             <i class="fa-regular fa-star"></i>
                                         </div>
-                                    </div>
-                                    
-                                    <div>
-                                    <button class="botonFavoritos">Trailer</button></a>
+                                   </div>
+                                                           
+                                    <div class="flex-botones">
+                                    <button class="botonFavoritos">
+                                          <a href="#anclaje">
+                                        <p>Volver al inicio</p>
+                                    </a></p>
+                                    </button>
                                     
                                     <button class="botonFavoritos"><a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" ><p>{{favorito.valoracion}}</p>
                                     </a>
                                     </button>
-                                    <!-- estrellas para valoracion
-                                    solida <i class="fa-solid fa-star"></i>
-                                    vacia <i class="fa-regular fa-star"></i>
-                                    -->
 
-                                    <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-dumpster-fire"></i></button>
+                                    <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-trash"></i></i></button>
                                     </div>
                             </div>
                         </div>
@@ -139,7 +138,7 @@
         </dialog>
         </main>
             </section>
-            <footer class="fondoFooter">
+            <footer class="fondoFooter" id="footer">
                 <div class="contenedor">
                     <h3 class="titulo-seccion">Contacta con Nosotros</h3>
                 </div>
@@ -157,7 +156,6 @@
                 <br>
         
             </footer>
-    </main>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/estrellas.js" defer></script>
