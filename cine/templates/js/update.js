@@ -5,27 +5,23 @@ for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
 console.log(args)
-document.getElementById("txtId").value = parts[0][1]
-document.getElementById("txtNombre").value = parts[1][1]
-document.getElementById("txtPrecio").value = parts[2][1]
-document.getElementById("txtStock").value = parts[3][1]
-document.getElementById("txtImg").value = parts[4][1]
+document.getElementById("txtNombre").value = parts[0][1]
+document.getElementById("txtValoracion").value = parts[1][1]
+document.getElementById("txtImg").value = parts[2][1]
 
 function modificar() {
     let id = document.getElementById("txtId").value
     let n = document.getElementById("txtNombre").value
-    let p = parseFloat(document.getElementById("txtPrecio").value)
-    let s = parseInt(document.getElementById("txtStock").value)
+    let p = parseFloat(document.getElementById("txtValoracion").value)
     let i = document.getElementById("txtImg").value
-    let producto = {
+    let favorito = {
         nombre: n,
-        precio: p,
-        stock: s,
+        valoracion: p,
         img: i
     }
-    let url = "http://localhost:5000/productos/"+id
+    let url = "http://localhost:5000/favoritos/"+id
     var options = {
-        body: JSON.stringify(producto),
+        body: JSON.stringify(favorito),
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         redirect: 'follow'

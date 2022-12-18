@@ -473,7 +473,10 @@ input:focus{
     box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
-
+.flex-columna{
+    display:flex; 
+    flex-direction:column;
+}
 .tachoFavoritos{
     width: 100%;
     height: 100%;

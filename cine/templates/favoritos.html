@@ -59,7 +59,7 @@
         <button class="anclaFooter fondoNosotros"> 
             <a href="#footer">Ir al Fondo</a>
             </button>
-        <div class="containerInvertido" id="app">
+    <div class="containerInvertido" id="app">
             <section v-if="errored">
              <p>Lo sentimos, no es posible obtener la información en este momento, por favor intente nuevamente mas tarde</p>
             </section>
@@ -73,8 +73,9 @@
                     <div class="containerInvertido">
                         <div v-for="favorito of favoritos">
                             <div class="tarjetaInvertida fondoNosotros linea1">
-                                    
-                                    <div class="posicionVertical">
+                                
+                                
+                                    <div>
                                         <div>
                                             <h4 class="numeroDeId">{{favorito.id}}</h4>
                                         </div>
@@ -89,54 +90,73 @@
                                             <i class="fa-regular fa-star"></i>
                                             <i class="fa-regular fa-star"></i>
                                         </div>
-                                   </div>
-                                                           
-                                    <div class="flex-botones">
-                                    <button class="botonFavoritos">
-                                          <a href="#anclaje">
-                                        <p>Volver al inicio</p>
-                                    </a></p>
-                                    </button>
-                                    
-                                    <button class="botonFavoritos"><a :href="'update.html?id='+favorito.id+'&nombre='+favorito.nombre+'&valorcion='+favorito.valoracion+'&img='+favorito.img" ><p>{{favorito.valoracion}}</p>
-                                    </a>
-                                    </button>
-
-                                    <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-trash"></i></i></button>
                                     </div>
+                            <div class="flex-columna">
+                                    <button class="botonFavoritos">
+                                        <a href="#anclaje">
+                                      <p>Volver al inicio</p>
+                                  </a></p>
+                                  </button>
+
+                                <div v-show="false">
+                                    <button id="show-modal" @click="showModal = true">Show Modal</button>
+                                        
+                                    <div>
+                                        <h1>Proyecto⛧cine</h1>
+                      
+                                                <div>
+                                                    <label for="txtNombre">Nombre</label>
+                                                    <input type="text" class="form-control" name="txtNombre" id="txtNombre">
+                                                </div>
+                                                <div>
+                                                    <label for="txtValoracion">Valoracion</label>
+                                                    <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> 
+                                                </div>
+                                                <div>
+                                                    <label for="txtImg">Imagen(URL)</label>
+                                                    <input type="text" class="form-control" name="txtImg" id="txtImg"> 
+                                                </div>
+                                                    <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>       
+                                        </div>
+                                </div>
+                            
+                                    <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-trash"></i></i></button>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div align="center"><button class="btn" id="btn-abrir-modal">Añadir favorito!</button></div>
-            <dialog class="fondoNosotros" id="modal">
-            <div>
-                <h1>Proyecto⛧cine</h1>
-                <form>      
-                <div>
-                        <label for="txtNombre">Nombre</label>
-                        <br>
-                        <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
-                    </div>
-                    <div>
-                        <label for="txtValoracion">Valoracion</label><br>
-                        <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> <br>
-                    </div>
-                    
-                    <div>
-                        <label for="txtImg">Imagen(URL)</label><br>
-                        <input type="text" class="form-control" name="txtImg" id="txtImg"> <br>
-                    </div>
-                    <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
-                    <button class="btn" id="btn-cerrar-modal">Cerrar</button>
-                   
-                </form>
-                <br>
+    </div>
+        
 
+    <div align="center"><button class="btn" id="btn-abrir-modal">Añadir favorito!</button></div>
+    <dialog class="fondoNosotros" id="modal">
+    <div>
+        <h1>Proyecto⛧cine</h1>
+        <form>      
+        <div>
+                <label for="txtNombre">Nombre</label>
+                <br>
+                <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
             </div>
-        </dialog>
-        </main>
+            <div>
+                <label for="txtValoracion">Valoracion</label><br>
+                <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> <br>
+            </div>
+            
+            <div>
+                <label for="txtImg">Imagen(URL)</label><br>
+                <input type="text" class="form-control" name="txtImg" id="txtImg"> <br>
+            </div>
+            <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+            <button class="btn" id="btn-cerrar-modal">Cerrar</button>
+           
+        </form>
+        <br>
+
+    </div>
+</dialog>
             </section>
             <footer class="fondoFooter" id="footer">
                 <div class="contenedor">
@@ -156,11 +176,12 @@
                 <br>
         
             </footer>
+        </main>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./js/estrellas.js" defer></script>
     <script src="./js/create.js"></script>
     <script src="./js/favoritos.js"></script>
+    <!-- <script src="./js/update.js"></script> -->
 </body>
 </html>
                                 
