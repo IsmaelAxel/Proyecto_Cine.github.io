@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto_Cine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="../../estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
@@ -98,27 +102,67 @@
                                   </a></p>
                                   </button>
 
-                                <div v-show="false">
-                                    <button id="show-modal" @click="showModal = true">Show Modal</button>
-                                        
-                                    <div>
+                                <div>
+                                
+                                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                                        Launch
+                                      </button>
+
+                                      <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                    <div class="modal-header">
+                                                            <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <form >
+                                                            <div class="mb-3">
+                                                                <label for="txtIdModificar">Id</label>
+                                                                        <input type="text" class="form-control" name="txtId" id="txtIdModificar" disabled><br>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="txtNombreModificar">Nombre:</label>
+                                                                <input type="text" class="form-control" name="txtNombre" id="txtNombreModificar"><br>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="txtValoracionModificar">Valoracion:</label>
+                                                                <input type="text" class="form-control" name="txtValoracion" id="txtValoracionModificar"> <br>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="txtImgModificar">URL</label>
+                                                                <input type="text" class="form-control" name="txtImg" id="txtImgModificar"> <br>
+                                                            </div>
+                                                            <button type="button" class="btn btn-success" onclick="modificar()">Grabar </button>
+                                                        </form>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div>
                                         <h1>Proyecto⛧cine</h1>
                       
                                                 <div>
                                                     <label for="txtNombre">Nombre</label>
-                                                    <input type="text" class="form-control" name="txtNombre" id="txtNombre">
+                                                    <input type="text" name="txtNombre" id="txtNombre">
                                                 </div>
                                                 <div>
                                                     <label for="txtValoracion">Valoracion</label>
-                                                    <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> 
+                                                    <input type="number" name="txtValoracion" id="txtValoracion"> 
                                                 </div>
                                                 <div>
                                                     <label for="txtImg">Imagen(URL)</label>
-                                                    <input type="text" class="form-control" name="txtImg" id="txtImg"> 
+                                                    <input type="text" name="txtImg" id="txtImg"> 
                                                 </div>
                                                     <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>       
                                         </div>
-                                </div>
+                                </div> -->
                             
                                     <button v-on:click="eliminar(favorito.id)" class="botonFavoritos"><i class="fa-solid fa-trash"></i></i></button>
                                 </div>
@@ -131,32 +175,32 @@
         
 
     <div align="center"><button class="btn" id="btn-abrir-modal">Añadir favorito!</button></div>
-    <dialog class="fondoNosotros" id="modal">
-    <div>
-        <h1>Proyecto⛧cine</h1>
-        <form>      
-        <div>
-                <label for="txtNombre">Nombre</label>
+            <dialog class="fondoNosotros" id="modal">
+            <div>
+                <h1>Proyecto⛧cine</h1>
+                <form>      
+                <div>
+                        <label for="txtNombre">Nombre</label>
+                        <br>
+                        <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
+                    </div>
+                    <div>
+                        <label for="txtValoracion">Valoracion</label><br>
+                        <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> <br>
+                    </div>
+                    
+                    <div>
+                        <label for="txtImg">Imagen(URL)</label><br>
+                        <input type="text" class="form-control" name="txtImg" id="txtImg"> <br>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
+                    <button class="btn" id="btn-cerrar-modal">Cerrar</button>
+                   
+                </form>
                 <br>
-                <input type="text" class="form-control" name="txtNombre" id="txtNombre"><br>
-            </div>
-            <div>
-                <label for="txtValoracion">Valoracion</label><br>
-                <input type="number" class="form-control" name="txtValoracion" id="txtValoracion"> <br>
-            </div>
-            
-            <div>
-                <label for="txtImg">Imagen(URL)</label><br>
-                <input type="text" class="form-control" name="txtImg" id="txtImg"> <br>
-            </div>
-            <button type="button" class="btn btn-success" onclick="guardar()">Grabar</button>
-            <button class="btn" id="btn-cerrar-modal">Cerrar</button>
-           
-        </form>
-        <br>
 
-    </div>
-</dialog>
+            </div>
+        </dialog>
             </section>
             <footer class="fondoFooter" id="footer">
                 <div class="contenedor">
@@ -177,11 +221,13 @@
         
             </footer>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ce970c0111.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/create.js"></script>
     <script src="./js/favoritos.js"></script>
-    <!-- <script src="./js/update.js"></script> -->
+    <script src="./js/update.js" defer></script>
 </body>
 </html>
                                 

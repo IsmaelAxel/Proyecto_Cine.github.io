@@ -5,16 +5,18 @@ for (let i = 0; i < args.length; ++i) {
     parts[i] = args[i].split('=');
 }
 console.log(args)
-document.getElementById("txtNombre").value = parts[0][1]
-document.getElementById("txtValoracion").value = parts[1][1]
-document.getElementById("txtImg").value = parts[2][1]
+document.getElementById("txtIdModificar").value = parts[0][1]
+document.getElementById("txtNombreModificar").value = parts[1][1]
+document.getElementById("txtValoracionModificar").value = parts[2][1]
+document.getElementById("txtImgModificar").value = parts[3][1]
 
 function modificar() {
-    let id = document.getElementById("txtId").value
-    let n = document.getElementById("txtNombre").value
-    let p = parseFloat(document.getElementById("txtValoracion").value)
-    let i = document.getElementById("txtImg").value
+    let id = document.getElementById("txtIdModificar").value
+    let n = document.getElementById("txtNombreModificar").value
+    let p = parseFloat(document.getElementById("txtValoracionModificar").value)
+    let i = document.getElementById("txtImgModificar").value
     let favorito = {
+        id : id,
         nombre: n,
         valoracion: p,
         img: i
@@ -38,3 +40,14 @@ function modificar() {
             alert("Error al Modificar")
         })      
 }
+
+var modalId = document.getElementById('modalId');
+        
+            modalId.addEventListener('show.bs.modal', function (event) {
+                  // Button that triggered the modal
+                  let button = event.relatedTarget;
+                  // Extract info from data-bs-* attributes
+                  let recipient = button.getAttribute('data-bs-whatever');
+        
+                // Use above variables to manipulate the DOM
+            });
