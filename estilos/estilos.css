@@ -338,6 +338,9 @@ input:focus{
 .fondoNosotros{
     background-image: linear-gradient(#000,#000, #000,#000,#000,#000, #851919,#851919);
 }
+button.fondoNosotros:hover{
+    box-shadow: 0 5px 16px 0 rgba(255, 255, 255, 0.5);
+}
 .linea2{
     border: 3px ridge #fff;
 }
@@ -345,6 +348,9 @@ input:focus{
     margin: 0px 20rem 0px 0px;
 }
 
+.LabelUpdate{
+    color: #fff;
+}
 /*----------------------------------------------------------------------------------      */
 
 
@@ -364,9 +370,7 @@ input:focus{
     display: flex;
     flex-direction: column;
 }
-.flex-botones button{
-    
-}
+
 .tarjetaInvertida{
     display: flex;
     direction: row;
