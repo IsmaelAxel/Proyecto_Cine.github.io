@@ -447,8 +447,30 @@ button.fondoNosotros:hover{
 }
 
 } */
+.enlaceUpdate{
+    text-decoration: none;
+    color: #fff;
+}
+.enlaceUpdate:hover{
+    text-decoration: none;
+    color: #fff;
+}
 
 
+.tituloUpdate{
+    background: -webkit-linear-gradient(#fff,#fff,#292929,#fff);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5em;
+  font-weight: bold;
+}
+.tituloUpdate:hover{
+    background: -webkit-linear-gradient(#851919,#fff,#851919,#fff,#000);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .botonFavoritos:hover{
 	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.658);
